@@ -145,6 +145,12 @@
 | [Tetris Ultimate](https://store.steampowered.com/app/316750)           | 离线  |   √   |   -   |   √   |   o   |   √   |   -   |   -   |     |   -   |   √   |    -     |   √   |   -   |
 | Tetris Journey                                                         |  寄   |   √   |   -   |   o   |   -   |   √   |   √   |   √   |     |   -   |   -   |    -     |   √   |   -   |
 
+## 其他页面
+
+本仓库还会用于存放一些“总之先丢到这里吧！”的文字资料：
+
+- [Allspin洞的系统命名法](naming_allspin_pattern.md)
+
 ## 维护者列表
 
 - MrZ_26 （Techmino作者，探索群群主）
