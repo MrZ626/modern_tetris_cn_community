@@ -98,6 +98,7 @@
 | [Example Block Game](https://github.com/Oshisaure/example-block-game)  |    o    |   √   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
 | Yin Li Xing Qiu / JJ tetris                                            |    o    |   √   |   √   |   -   |   √   |   √   |   √   |   √    |     |   -   |   -   |    √     |   -   |   -   |
 | TGM[^5]                                                                |    o    |   √   | o[^6] |   o   |   -   |   √   |   √   |   -    |     |   -   | o[^7] |    -     |   √   |   -   |
+| [Tetra Chroma](https://store.steampowered.com/app/2702490)             |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
 | [Betrix](https://store.steampowered.com/app/2007710)                   |    o    |   √   |   -   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
 | Tetris 99                                                              |    o    |   √   |   -   |   o   |   √   | o[^8] |   o   |   -    |     |   -   |   -   |    -     |   √   |   -   |
 | [TETRIO.IO](https://tetrio.io)                                         |    o    |   o   |   √   |   √   |   √   |   -   |   √   |   -    |     |   √   |   √   |    √     |   -   |   -   |
@@ -120,7 +121,7 @@
 | [tetris.com](https://tetris.com)                                       |    -    |   √   |   √   |   -   |   -   |   √   |   √   |   √    |     |   √   |   √   |    -     |   √   |   -   |
 | Texmaster                                                              |    -    |   √   |   √   |   -   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
 | Sega Tetris                                                            |    -    |   √   |   o   |   o   |   -   |   √   |   o   |   -    |     |   -   |   o   |    -     |   √   |   -   |
-| Tetris Beat                                                            |    -    |   √   |   -   |   o   |   -   |   √   |   -   |   -    |     |   -   |   -   |    -     |   √   |   -   |
+| Tetris Beat                                                            |    -    |   √   |   -   |   o   |   -   |   √   |   -   | √[^11] |     |   -   |   -   |    -     |   √   |   -   |
 | [Falling Lightblocks](http://mrstahlfelge.itch.io/lightblocks)         |    -    |   o   |   √   |   o   |   √   |   √   |   √   |   √    |     |   o   |   √   |    -     |   -   |   -   |
 | [Nullpomino](https://github.com/nullpomino/nullpomino)                 |    -    |   o   |   √   |   o   |   o   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
 | [T-ex](http://farter.cn/index.htm)                                     |    -    |   o   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
@@ -135,7 +136,8 @@
 | Tetra Online                                                           |  离线   |   √   |   √   |   -   |   -   |   -   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
 | Tetris Blitz                                                           |  离线   |   √   |   o   |   √   |   -   |   √   |   -   |   √    |     |   -   |   -   |    -     |   √   |   -   |
 | [Tetris Ultimate](https://store.steampowered.com/app/316750)           |  离线   |   √   |   -   |   √   |   o   |   √   |   -   |   -    |     |   -   |   √   |    -     |   √   |   -   |
-| Tetris Journey                                                         | 寄[^11] |   √   |   -   |   o   |   -   |   √   |   √   |   √    |     |   -   |   -   |    -     |   √   |   -   |
+| Quadra Break                                                           | 寄[^12] |   √   |   -   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
+| Tetris Journey                                                         | 寄[^13] |   √   |   -   |   o   |   -   |   √   |   √   |   √    |     |   -   |   -   |    -     |   √   |   -   |
 
 [^1]: 虽然多人服务器正在运行，但由于技术因素较难完成登录，也没有专门的联网玩法，只是实验性内容。
 [^2]: 仅在单人和多人的自定义模式下，提供相对有限的研究工具。
@@ -147,7 +149,9 @@
 [^8]: 作为 DLC 内容出现。
 [^9]: 链接提供的是 farter 的魔改版，也称「屁块」。
 [^10]: 不支持自定义布局，只能在几个预设布局间切换。
-[^11]: 授权到期且未续约，已停服。
+[^11]: IOS独占。
+[^12]: 被DMCA然后下架了。
+[^13]: 授权到期且未续约，已停服。
 
 ## 其他页面
 
