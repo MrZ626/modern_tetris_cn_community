@@ -13,7 +13,7 @@
 | -------------- | ---------------------------- |
 | 2018.11.09     | Tetris Effect发布            |
 | 2020.11.10     | Tetris Effect: Connected发布 |
-| 2019.??.??     | Techmino发布                 |
+| 2019.06.26     | Techmino的生日（官方指定）       |
 | 2023.06.10     | Techmino从App Store下架      |
 | 2025.12.11     | Quadra Break下架             |
 | 2026.02.07     | Enhance的b站官方账号上线     |
