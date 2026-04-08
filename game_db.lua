@@ -81,9 +81,9 @@ local gameDatabase={
     {0,2,2,0,2,2,2,0,0,2,0,0,0,"tetra online","（离线）Tetra Online","离线版本 github.com/Juan-Cartes/Tetra-Offline/releases/tag/1.0","UI部分模仿了PPT，音乐不错，攻击特效好看，于2020年12月9日收到来自TTC的DMCA警告信于是被迫停止开发，在一段时间后关服并下架Steam"},
     {0,2,2,0,2,2,1,0,2,2,1,2,0,"tf;tetris friends;notris;notrisfoes","（私服）Tetris Friends","私服：notrisfoes.com","以前人比较多，后来官服倒闭了热度没了"},
     {0,2,1,2,0,2,0,2,0,0,0,2,0,"闪电战;tetris blitz","（离线）Tetris Blitz","","EA代理的一款移动端方块，有重力连锁机制，限时2分钟，已于2020年4月下架\n另见 #Blitz模式","持续消行会进入Frenzy模式（场地下方会不断冒出垃圾行，帮助玩家制造大连锁，如果多次落块没有消行会强制结束Frenzy）。有非常多的道具\n当新出现的方块与场地现有方块重叠时，场地最上方的几行会被自动清除，游戏不结束"},
-    {0,2,0,2,1,2,0,0,0,2,0,2,0,"ultimate;tetris ultimate","（离线）Tetris Ultimate","store.steampowered.com/app/316750","有周期隐形/山体滑坡/双人同版等有趣模式，目前已下架"},
+    {0,2,0,2,1,2,0,0,0,2,0,2,0,"ultimate;tetris ultimate","（下架）Tetris Ultimate","store.steampowered.com/app/316750","有周期隐形/山体滑坡/双人同版等有趣模式，目前已下架"},
     {0,2,0,2,0,2,2,0,0,2,2,0,0,"quadra break;qb","（下线）Quadra Break","","以那些广告里疯狂cascade超宽屏方块为灵感的游戏\n已逝，永远怀念"},
-    {0,2,0,1,0,2,2,2,0,0,0,2,0,"环游记;俄罗斯方块环游记;journey;tetris journey","（下线）Tetris Journey","","国内第一款正版授权手游方块。有闯关模式、对战模式和几个单机模式。闯关模式有各种各样有趣规则大多数有重力连锁，已于2023年2月15日停服"},
+    {0,2,0,1,1,2,2,2,0,0,0,2,0,"环游记;俄罗斯方块环游记;journey;tetris journey","（下线）Tetris Journey","","国内第一款正版授权手游方块。有闯关模式、对战模式和几个单机模式。闯关模式有各种各样有趣规则大多数有重力连锁，已于2023年2月15日停服"},
 }
 
 local ins = table.insert

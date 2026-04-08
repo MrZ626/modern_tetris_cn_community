@@ -147,9 +147,9 @@
 | [（离线）Tetra Online](https://github.com/Juan-Cartes/Tetra-Offline/releases/tag/1.0) |   x   |   √   |   √   |   -   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
 | [（私服）Tetris Friends](https://notrisfoes.com)                                      |   x   |   √   |   √   |   -   |   √   |   √   |   o   |   -   |     |   √   |   √   |    o     |   √   |   -   |
 | （离线）Tetris Blitz                                                                  |   x   |   √   |   o   |   √   |   -   |   √   |   -   |   √   |     |   -   |   -   |    -     |   √   |   -   |
-| [（离线）Tetris Ultimate](https://store.steampowered.com/app/316750)                  |   x   |   √   |   -   |   √   |   o   |   √   |   -   |   -   |     |   -   |   √   |    -     |   √   |   -   |
+| [（下架）Tetris Ultimate](https://store.steampowered.com/app/316750)                  |   x   |   √   |   -   |   √   |   o   |   √   |   -   |   -   |     |   -   |   √   |    -     |   √   |   -   |
 | （下线）Quadra Break[^11]                                                             |   x   |   √   |   -   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
-| （下线）Tetris Journey[^12]                                                           |   x   |   √   |   -   |   o   |   -   |   √   |   √   |   √   |     |   -   |   -   |    -     |   √   |   -   |
+| （下线）Tetris Journey[^12]                                                           |   x   |   √   |   -   |   o   |   o   |   √   |   √   |   √   |     |   -   |   -   |    -     |   √   |   -   |
 
 [^1]: 虽然多人服务器正在运行，但由于技术因素较难完成登录，也没有专门的联网玩法，只是实验性内容。
 [^2]: 仅在单人和多人的自定义模式下，提供相对有限的研究工具。
