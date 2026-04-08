@@ -93,7 +93,7 @@ for i = 1, #gameDatabase do
     local l = {}
     if #d[16] > 0 then
         d[16] = d[16]:match("%w%S+")
-        ins(l, "[" .. d[15] .. "](" .. d[16] .. ")")
+        ins(l, "[" .. d[15] .. "](https://" .. d[16] .. ")")
     else
         ins(l, d[15])
     end
