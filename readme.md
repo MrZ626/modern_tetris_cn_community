@@ -14,9 +14,9 @@
 
 ## 资料网站们
 
-- [俄罗斯方块中文维基](http://tetriswiki.cn)
-- [HardDrop Wiki](https://harddrop.com/wiki)
-- [Tetris Wiki](https://tetris.wiki)
+- [俄罗斯方块中文维基](tetriswiki.cn)
+- [HardDrop Wiki](harddrop.com/wiki)
+- [Tetris Wiki](tetris.wiki)
 
 ## 群列表和活跃情况
 
@@ -85,93 +85,85 @@
 - 排序优先级：热门 > 音画 > 免费 > 创新 > 多人 > 单人 > 改键 > 手机
 - “创新”一栏为MrZ大致估计，仅供参考
 
-| 游戏                                                                   |  热门   | 音画  | 免费  | 创新  | 多人  | 单人  | 改键  |  手机  |     | 网页  | 电脑  | 可调移动 | 官方  | 工具  |
-| ---------------------------------------------------------------------- | :-----: | :---: | :---: | :---: | :---: | :---: | :---: | :----: | --- | :---: | :---: | :------: | :---: | :---: |
-| [Techmino](https://studio26f.org)                                      |    √    |   √   |   √   |   √   | o[^1] |   √   |   √   |   √    |     |   -   |   √   |    √     |   -   |   √   |
-| [TETR.IO](https://tetr.io)                                             |    √    |   √   |   √   |   o   |   √   |   √   |   √   |   -    |     |   √   |   √   |    √     |   -   | o[^2] |
-| [Tetris Effect: Connected](https://store.steampowered.com/app/1003590) |    √    |   √   |   -   |   √   |   √   |   √   |   √   |   -    |     |   -   |   √   |    -     |   √   |   -   |
-| [Puyo Puyo Tetris](https://store.steampowered.com/app/546050)          |    √    |   √   |   -   |   o   |   √   |   √   |   √   |   -    |     |   -   |   √   |    -     |   √   |   -   |
-| [Jstris](https://jezevec10.com)                                        |    √    |   -   |   √   |   o   |   √   |   √   |   √   | o[^3]  |     |   √   |   √   |    √     |   -   |   o   |
-| [Worldwide Combos](https://worldwidecombos.com)                        |    o    |   √   |   √   |   √   |   √   |   √   |   √   |   -    |     |   √   |   √   |    √     |   -   |   -   |
-| [Cultris II](https://gewaltig.net)                                     |    o    |   √   |   √   |   √   |   √   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
-| [Spirit Drop](https://rayblastgames.com/spiritdrop.php)                |    o    |   √   |   √   |   √   |   o   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
-| [Aquamino](https://aqua6623.itch.io/aquamino)                          |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   √    |     |   -   |   √   |    √     |   -   |   -   |
-| [Tetris Gems](https://tetris.com/play-tetrisgems)                      |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   √    |     |   √   |   √   |    √     |   √   |   -   |
-| [C::Reactris](https://www.bilibili.com/video/BV13u411G75m)[^4]         |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   √    |     |   -   |   √   |    √     |   -   |   o   |
-| [Polyform](https://stellartophat.itch.io/polyform)                     |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
-| [Chextris](https://chemicalex.itch.io/chextris)                        |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
-| [Example Block Game](https://github.com/Oshisaure/example-block-game)  |    o    |   √   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Yin Li Xing Qiu / JJ tetris                                            |    o    |   √   |   √   |   -   |   √   |   √   |   √   |   √    |     |   -   |   -   |    √     |   -   |   -   |
-| TGM[^5]                                                                |    o    |   √   | o[^6] |   o   |   -   |   √   |   √   |   -    |     |   -   | o[^7] |    -     |   √   |   -   |
-| [Tetra Chroma](https://store.steampowered.com/app/2702490)             |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
-| [Betrix](https://store.steampowered.com/app/2007710)                   |    o    |   √   |   -   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
-| [Tetra eSports](https://tetraesports.com/)                             |    o    |   √   |   -   |   o   |   √   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Tetris 99                                                              |    o    |   √   |   -   |   o   |   √   | o[^8] |   o   |   -    |     |   -   |   -   |    -     |   √   |   -   |
-| [TETRIO.IO](https://tetrio.io)                                         |    o    |   o   |   √   |   √   |   √   |   -   |   √   |   -    |     |   √   |   √   |    √     |   -   |   -   |
-| [Tetr.js](http://farter.cn/t)[^9]                                      |    o    |   o   |   √   |   √   |   -   |   √   |   √   | o[^10] |     |   √   |   √   |    √     |   -   |   -   |
-| [Ascension](https://asc.winternebs.com)                                |    o    |   o   |   √   |   √   |   -   |   √   |   √   |   -    |     |   √   |   √   |    √     |   -   |   -   |
-| [Nuketris](https://nuketris.com)                                       |    o    |   o   |   √   |   -   |   o   |   √   |   √   |   -    |     |   √   |   √   |    -     |   -   |   -   |
-| [King of Stackers](https://kingofstackers.com/games.php)               |    o    |   -   |   √   |   √   |   √   |   o   |   √   |   o    |     |   √   |   √   |    √     |   -   |   -   |
-| [TTT](http://teatube.cn/TTT)                                           |    o    |   -   |   √   |   -   |   -   |   √   |   √   |   o    |     |   √   |   √   |    -     |   -   |   √   |
-| [TTPC](http://teatube.cn/ttpc)                                         |    o    |   -   |   √   |   -   |   -   |   √   |   √   |   o    |     |   √   |   √   |    -     |   -   |   √   |
-| TPO                                                                    |    o    |   -   |   √   |   -   |   -   |   √   |   √   |   o    |     |   √   |   √   |    -     |   -   |   √   |
-| [NAZO](http://teatube.cn/nazo)                                         |    o    |   -   |   √   |   -   |   -   |   √   |   √   |   o    |     |   √   |   √   |    -     |   -   |   √   |
-| [DTET](https://dtet.zui.jp/dtet/index.html)                            |    -    |   √   |   √   |   √   |   o   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| [Touhoumino](https://www.touhoumino.com/)                              |    -    |   √   |   √   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
-| [Tetris Mind Bender](https://play.tetris.com/mindbender)               |    -    |   √   |   √   |   o   |   -   |   √   |   √   |   √    |     |   √   |   √   |    √     |   √   |   -   |
-| [Tetra Legends](https://tetralegends.app)                              |    -    |   √   |   √   |   o   |   -   |   √   |   √   |   -    |     |   √   |   √   |    √     |   -   |   -   |
-| [Cambridge](https://github.com/Tetro48/cambridge)                      |    -    |   √   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
-| Misamino                                                               |    -    |   √   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
-| Heboris                                                                |    -    |   √   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Tetris (N3TWORK)                                                       |    -    |   √   |   √   |   -   |   √   |   √   |   -   |   √    |     |   -   |   -   |    -     |   √   |   -   |
-| [tetris.com](https://play.tetris.com)                                  |    -    |   √   |   √   |   -   |   -   |   √   |   √   |   √    |     |   √   |   √   |    √     |   √   |   -   |
-| Texmaster                                                              |    -    |   √   |   √   |   -   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Sega Tetris                                                            |    -    |   √   |   o   |   o   |   -   |   √   |   o   |   -    |     |   -   |   o   |    -     |   √   |   -   |
-| Tetris Beat                                                            |    -    |   √   |   -   |   o   |   -   |   √   |   -   | √[^11] |     |   -   |   -   |    -     |   √   |   -   |
-| [Falling Lightblocks](http://mrstahlfelge.itch.io/lightblocks)         |    -    |   o   |   √   |   o   |   √   |   √   |   √   |   √    |     |   o   |   √   |    -     |   -   |   -   |
-| [Nullpomino](https://github.com/nullpomino/nullpomino)                 |    -    |   o   |   √   |   o   |   o   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
-| [T-ex](http://farter.cn/index.htm)                                     |    -    |   o   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| [HuoPin Tetris](https://qqgame.qq.com/app/gamedetail_11.shtml)         |    -    |   o   |   √   |   -   |   √   |   -   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Master of Block                                                        |    -    |   o   |   √   |   -   |   -   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Four-tris                                                              |    -    |   -   |   √   |   o   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   √   |
-| [Ztrix](https://ztrix-game.web.app)                                    |    -    |   -   |   √   |   -   |   -   |   √   |   √   |   √    |     |   √   |   √   |    √     |   -   |   √   |
-| [Fumen](https://fumen.zui.jp)                                          |    -    |   -   |   √   |   -   |   -   |   √   |   -   |   √    |     |   √   |   √   |    -     |   -   |   √   |
-| Tetris Online                                                          |  私服   |   √   |   √   |   -   |   √   |   √   |   √   |   -    |     |   -   |   √   |    o     |   √   |   -   |
-| Tetris Friends                                                         |  私服   |   √   |   √   |   -   |   o   |   o   |   o   |   -    |     |   √   |   √   |    o     |   √   |   -   |
-| Tetris (EA)                                                            |  离线   |   √   |   √   |   √   |   -   |   √   |   -   |   √    |     |   -   |   -   |    -     |   √   |   -   |
-| Tetra Online                                                           |  离线   |   √   |   √   |   -   |   -   |   -   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
-| Tetris Blitz                                                           |  离线   |   √   |   o   |   √   |   -   |   √   |   -   |   √    |     |   -   |   -   |    -     |   √   |   -   |
-| [Tetris Ultimate](https://store.steampowered.com/app/316750)           |  离线   |   √   |   -   |   √   |   o   |   √   |   -   |   -    |     |   -   |   √   |    -     |   √   |   -   |
-| Quadra Break                                                           | 寄[^12] |   √   |   -   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
-| Tetris Journey                                                         | 寄[^13] |   √   |   -   |   o   |   -   |   √   |   √   |   √    |     |   -   |   -   |    -     |   √   |   -   |
+<!-- 该表格通过数据库自动生成，不要修改，详见 game_db.lua 文件开头有更多说明 -->
+| 游戏                                                                          | 热门  | 音画  | 免费  | 创新  | 多人  | 单人  | 改键  | 手机  |     | 网页  | 电脑  | 可调移动 | 官方  | 工具  |
+| ----------------------------------------------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | --- | :---: | :---: | :------: | :---: | :---: |
+| [Techmino](studio26f.org)                                                     |   √   |   √   |   √   |   √   | o[^1] |   √   |   √   |   √   |     |   -   |   √   |    √     |   -   |   √   |
+| [TETR.IO](tetr.io)                                                            |   √   |   √   |   √   |   o   |   √   |   √   |   √   |   -   |     |   √   |   √   |    √     | -[^2] |   o   |
+| [Tetris Effect: Connected](store.steampowered.com/app/1003590)                |   √   |   √   |   -   |   √   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   √   |   -   |
+| [Puyo Puyo Tetris](store.steampowered.com/app/546050)                         |   √   |   √   |   -   |   o   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   √   |   -   |
+| [Jstris](jezevec10.com)                                                       |   √   |   -   |   √   |   o   |   √   |   √   |   √   | o[^3] |     |   √   |   √   |    √     |   -   |   o   |
+| [Worldwide Combos](worldwidecombos.com)                                       |   o   |   √   |   √   |   √   |   √   |   √   |   √   |   -   |     |   √   |   √   |    √     |   -   |   -   |
+| [Cultris II](gewaltig.net)                                                    |   o   |   √   |   √   |   √   |   √   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| [Spirit Drop](rayblastgames.com/spiritdrop.php)                               |   o   |   √   |   √   |   √   |   o   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
+| [Tetris Gems](tetris.com/play-tetrisgems)                                     |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   √   |   -   |
+| [C::Reactris](b23.tv/BV13u411G75m)[^4]                                        |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   √   |     |   -   |   √   |    √     |   -   |   o   |
+| [Aquamino](aqua6623.itch.io/aquamino)                                         |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   √   |     |   -   |   √   |    √     |   -   |   -   |
+| [Chextris](chemicalex.itch.io/chextris)                                       |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
+| [Tetra Chroma](store.steampowered.com/app/2702490)                            |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| [Polyform](stellartophat.itch.io/polyform)                                    |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| [Example Block Game](github.com/Oshisaure/example-block-game)                 |   o   |   √   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| JJ tetris                                                                     |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   -   |
+| 引力星球                                                                      |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   -   |
+| Tetris (NES, Nintendo)                                                        |   o   |   √   |   √   |   -   |   -   |   √   |   o   |   o   |     |   o   |   o   |    -     |   √   |   -   |
+| [God of Stackers](godofstackers.com)                                          |   o   |   √   |   o   |   o   |   √   |   √   |   √   |   -   |     |   √   |   √   |    √     |   -   |   o   |
+| TGM(1-3代)[^5]                                                                |   o   |   √   |   o   |   o   |   -   |   √   |   √   |   o   |     | -[^6] |   o   |    -     |   √   |   -   |
+| [Betrix](store.steampowered.com/app/2007710)                                  |   o   |   √   |   -   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
+| [Tetra eSports](tetraesports.com/)                                            |   o   |   √   |   -   |   o   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| Tetris 99                                                                     |   o   |   √   |   -   |   o   |   √   | o[^7] |   o   |   -   |     |   -   |   -   |    -     |   √   |   -   |
+| [TETRIO.IO](tetrio.io)                                                        |   o   |   o   |   √   |   √   |   √   |   -   |   √   |   -   |     |   √   |   √   |    √     |   -   |   -   |
+| [Tetr.js](farter.cn/t)[^8]                                                    |   o   |   o   |   √   |   √   |   -   |   √   |   √   | o[^9] |     |   √   |   √   |    √     |   -   |   -   |
+| [Ascension](asc.winternebs.com)                                               |   o   |   o   |   √   |   √   |   -   |   √   |   √   |   -   |     |   √   |   √   |    √     |   -   |   -   |
+| [Nuketris](nuketris.com)                                                      |   o   |   o   |   √   |   -   |   o   |   √   |   √   |   -   |     |   √   |   √   |    -     |   -   |   -   |
+| [King of Stackers](kingofstackers.com/games.php)                              |   o   |   -   |   √   |   √   |   √   |   o   |   √   |   o   |     |   √   |   √   |    √     |   -   |   -   |
+| [TTT](teatube.cn/TTT)                                                         |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
+| [TTPC](teatube.cn/ttpc)                                                       |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
+| [TPO](47.92.33.38/tpo)                                                        |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
+| [NAZO](teatube.cn/nazo)                                                       |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
+| [DTET](dtet.zui.jp/dtet/index.html)                                           |   -   |   √   |   √   |   √   |   o   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| [Touhoumino](www.touhoumino.com/)                                             |   -   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| [Tetris Mind Bender](play.tetris.com/mindbender)                              |   -   |   √   |   √   |   o   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   √   |   -   |
+| [Apotris](akouzoukos.com/apotris)                                             |   -   |   √   |   √   |   o   |   -   |   √   |   √   |   o   |     |   o   |   o   |    √     |   -   |   √   |
+| [Tetra Legends](tetralegends.app)                                             |   -   |   √   |   √   |   o   |   -   |   √   |   √   |   -   |     |   √   |   √   |    √     |   -   |   -   |
+| Misamino                                                                      |   -   |   √   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
+| [Cambridge](github.com/Tetro48/cambridge)                                     |   -   |   √   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| Heboris                                                                       |   -   |   √   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| Tetris (N3TWORK)                                                              |   -   |   √   |   √   |   -   |   √   |   √   |   -   |   √   |     |   -   |   -   |    -     |   √   |   -   |
+| [tetris.com](play.tetris.com)                                                 |   -   |   √   |   √   |   -   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   √   |   -   |
+| Texmaster                                                                     |   -   |   √   |   √   |   -   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| Sega Tetris                                                                   |   -   |   √   |   o   |   o   |   -   |   √   |   o   |   -   |     |   -   |   o   |    -     |   √   |   -   |
+| [Tetris Forever](store.steampowered.com/app/3180240)                          |   -   |   √   |   -   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    o     |   √   |   o   |
+| Tetris Beat[^10]                                                              |   -   |   √   |   -   |   o   |   -   |   √   |   -   |   √   |     |   -   |   -   |    -     |   √   |   -   |
+| [Falling Lightblocks](mrstahlfelge.itch.io/lightblocks)                       |   -   |   o   |   √   |   o   |   √   |   √   |   √   |   √   |     |   o   |   √   |    -     |   -   |   -   |
+| [Nullpomino](github.com/nullpomino/nullpomino)                                |   -   |   o   |   √   |   o   |   o   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
+| [T-ex](farter.cn/index.htm)                                                   |   -   |   o   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| [火拼俄罗斯](qqgame.qq.com/app/gamedetail_11.shtml)                           |   -   |   o   |   √   |   -   |   √   |   -   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| Master of Block                                                               |   -   |   o   |   √   |   -   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| Four-tris                                                                     |   -   |   -   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   √   |
+| [Ztrix](ztrix-game.web.app)                                                   |   -   |   -   |   √   |   -   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   -   |   √   |
+| [Fumen](fumen.zui.jp)                                                         |   -   |   -   |   √   |   -   |   -   |   √   |   -   |   √   |     |   √   |   √   |    -     |   -   |   √   |
+| （离线）Tetris (EA)                                                           |   x   |   √   |   √   |   √   |   -   |   √   |   -   |   √   |     |   -   |   -   |    -     |   √   |   -   |
+| （私服）Tetris Online                                                         |   x   |   √   |   √   |   -   |   √   |   √   |   √   |   -   |     |   -   |   √   |    o     |   √   |   -   |
+| [（离线）Tetra Online](github.com/Juan-Cartes/Tetra-Offline/releases/tag/1.0) |   x   |   √   |   √   |   -   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
+| [（私服）Tetris Friends](notrisfoes.com)                                      |   x   |   √   |   √   |   -   |   √   |   √   |   o   |   -   |     |   √   |   √   |    o     |   √   |   -   |
+| （离线）Tetris Blitz                                                          |   x   |   √   |   o   |   √   |   -   |   √   |   -   |   √   |     |   -   |   -   |    -     |   √   |   -   |
+| [（离线）Tetris Ultimate](store.steampowered.com/app/316750)                  |   x   |   √   |   -   |   √   |   o   |   √   |   -   |   -   |     |   -   |   √   |    -     |   √   |   -   |
+| （下线）Quadra Break[^11]                                                     |   x   |   √   |   -   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| （下线）Tetris Journey[^12]                                                   |   x   |   √   |   -   |   o   |   -   |   √   |   √   |   √   |     |   -   |   -   |    -     |   √   |   -   |
 
-<!-- NES, Forever 待补充 -->
-
+<!-- 修改脚注也不要直接改这里，去改 game_db.lua 文件开头的 footnote 表 -->
 [^1]: 虽然多人服务器正在运行，但由于技术因素较难完成登录，也没有专门的联网玩法，只是实验性内容。
-
 [^2]: 仅在单人和多人的自定义模式下，提供相对有限的研究工具。
-
 [^3]: 多人模式无法实时看到其他人场地。
-
 [^4]: 也称 MC 俄罗斯方块。
-
-[^5]: 俄罗斯方块特级大师系列，街机风游戏。
-
-[^6]: TGM4-AE 可在 Steam 购买，前两作可在 Nintendo Switch 购买复刻版体验。
-
-[^7]: 原本是街机游戏，但也可在电脑上游玩。
-
-[^8]: 作为 DLC 内容出现。
-
-[^9]: 链接提供的是 farter 的魔改版，也称「屁块」。
-
-[^10]: 不支持自定义布局，只能在几个预设布局间切换。
-
-[^11]: IOS独占。
-
-[^12]: 被DMCA然后下架了。
-
-[^13]: 授权到期且未续约，已停服。
+[^5]: 俄罗斯方块特级大师系列，街机风游戏。前两作可在 Nintendo Switch 购买复刻版体验，另有 TGM4-AE 在 Steam 有售。
+[^6]: 原本是街机游戏，但也有电脑移植版。
+[^7]: 作为 DLC 内容出现。
+[^8]: 链接提供的是 farter 的魔改版，也称「屁块」。
+[^9]: 不支持自定义布局，只能在几个预设布局间切换。
+[^10]: IOS独占。
+[^11]: 被DMCA然后下架了。
+[^12]: 授权到期且未续约，已停服。
 
 ## 其他页面
 
