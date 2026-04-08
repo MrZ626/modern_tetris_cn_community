@@ -105,6 +105,7 @@
 | TGM[^5]                                                                |    o    |   √   | o[^6] |   o   |   -   |   √   |   √   |   -    |     |   -   | o[^7] |    -     |   √   |   -   |
 | [Tetra Chroma](https://store.steampowered.com/app/2702490)             |    o    |   √   |   √   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   -   |
 | [Betrix](https://store.steampowered.com/app/2007710)                   |    o    |   √   |   -   |   √   |   -   |   √   |   √   |   -    |     |   -   |   √   |    √     |   -   |   o   |
+| [Tetra eSports](https://tetraesports.com/)                             |    o    |   √   |   -   |   o   |   √   |   √   |   √   |   -    |     |   -   |   √   |    -     |   -   |   -   |
 | Tetris 99                                                              |    o    |   √   |   -   |   o   |   √   | o[^8] |   o   |   -    |     |   -   |   -   |    -     |   √   |   -   |
 | [TETRIO.IO](https://tetrio.io)                                         |    o    |   o   |   √   |   √   |   √   |   -   |   √   |   -    |     |   √   |   √   |    √     |   -   |   -   |
 | [Tetr.js](http://farter.cn/t)[^9]                                      |    o    |   o   |   √   |   √   |   -   |   √   |   √   | o[^10] |     |   √   |   √   |    √     |   -   |   -   |
