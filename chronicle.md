@@ -9,11 +9,13 @@
 - 较大规模比赛（结束日期和冠军写在事件内容里）
 - 方块官方动静
 
-| 日期（年月日） | 事件                         |
-| -------------- | ---------------------------- |
-| 2018.11.09     | Tetris Effect发布            |
-| 2020.11.10     | Tetris Effect: Connected发布 |
-| 2019.06.26     | Techmino的生日（官方指定）       |
-| 2023.06.10     | Techmino从App Store下架      |
-| 2025.12.11     | Quadra Break下架             |
-| 2026.02.07     | Enhance的b站官方账号上线     |
+| 日期（年月日） | 事件                           |
+| -------------- | ------------------------------ |
+| 2018.11.09     | Tetris Effect发布              |
+| 2020.11.10     | Tetris Effect: Connected发布   |
+| 2019.06.26     | Techmino的生日（官方指定）     |
+| 2023.06.10     | Techmino下线App Store          |
+| 2025.11.06     | Stackflow上线Steam             |
+| 2025.12.11     | Quadra Break下线Steam          |
+| 2026.02.07     | Enhance的b站官方账号上线       |
+| 2026.04.26     | Techmino-Downstacking上线Steam |
