@@ -104,6 +104,7 @@
 | [Touhoumino](https://www.touhoumino.com/)                                             |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
 | [Tetra Chroma](https://store.steampowered.com/app/2702490)                            |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
 | [Polyform](https://stellartophat.itch.io/polyform)                                    |   o   |   √   |   √   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
+| [Tetra eSports](https://tetraesports.com/)                                            |   o   |   √   |   √   |   o   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
 | [Tetris Mind Bender](https://play.tetris.com/mindbender)                              |   o   |   √   |   √   |   o   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   √   |   -   |
 | [Apotris](https://akouzoukos.com/apotris)                                             |   o   |   √   |   √   |   o   |   -   |   √   |   √   |   o   |     |   o   |   o   |    √     |   -   |   √   |
 | TGM(1-3代)[^5]                                                                        |   o   |   √   |   √   |   o   |   -   |   √   |   √   |   o   |     | -[^6] |   o   |    -     |   √   |   -   |
@@ -122,7 +123,6 @@
 | Tetris (NES, Nintendo)                                                                |   o   |   √   |   √   |   -   |   -   |   √   |   o   |   o   |     |   o   |   o   |    -     |   √   |   -   |
 | [God of Stackers](https://godofstackers.com)                                          |   o   |   √   |   o   |   o   |   √   |   √   |   √   |   -   |     |   √   |   √   |    √     |   -   |   o   |
 | [Betrix](https://store.steampowered.com/app/2007710)                                  |   o   |   √   |   -   |   √   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
-| [Tetra eSports](https://tetraesports.com/)                                            |   o   |   √   |   -   |   o   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
 | Tetris 99                                                                             |   o   |   √   |   -   |   o   |   √   | o[^7] |   o   |   -   |     |   -   |   -   |    -     |   √   |   -   |
 | [Techmino Downstacking](https://store.steampowered.com/app/4568800)                   |   o   |   √   |   -   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
 | [Tetris Forever](https://store.steampowered.com/app/3180240)                          |   o   |   √   |   -   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    o     |   √   |   o   |
