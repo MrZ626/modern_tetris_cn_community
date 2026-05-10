@@ -173,6 +173,7 @@
 
 本仓库还会用于存放一些“总之先丢到这里吧！”的文字资料：
 
+- [TETR.IO QP2规则文档](io_qp2_rule/full.md)
 - [Allspin洞的系统命名法](naming_allspin_pattern.md)
 - [块圈大事记](chronicle.md)
 - [什么是“现代”块？](modern_stacker.md)
