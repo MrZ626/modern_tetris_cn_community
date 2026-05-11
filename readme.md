@@ -177,6 +177,7 @@
 - [Allspin洞的系统命名法](naming_allspin_pattern.md)
 - [块圈大事记](chronicle.md)
 - [什么是“现代”块？](modern_stacker.md)
+- [俄罗斯方块的版权？](legal_issues.md)
 
 ## 维护者列表
 
