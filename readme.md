@@ -115,8 +115,10 @@
 | [Example Block Game](https://github.com/Oshisaure/example-block-game)                 |   o   |   √   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
 | Tetris Giant (Dekaris)                                                                |   o   |   √   |   √   |   o   |   -   |   √   |   o   |   o   |     |   -   |   o   |    -     |   √   |   -   |
 | Sega Tetris                                                                           |   o   |   √   |   √   |   o   |   -   |   √   |   o   |   -   |     |   -   |   o   |    -     |   √   |   -   |
-| JJ tetris                                                                             |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   -   |
+| Testmino                                                                              |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   o   |
 | 引力星球                                                                              |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   -   |
+| 决战方块                                                                              |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   -   |
+| JJ tetris                                                                             |   o   |   √   |   √   |   -   |   √   |   √   |   √   |   √   |     |   -   |   -   |    √     |   -   |   -   |
 | Tetris (N3TWORK)                                                                      |   o   |   √   |   √   |   -   |   √   |   √   |   -   |   √   |     |   -   |   -   |    -     |   √   |   -   |
 | [tetris.com](https://play.tetris.com)                                                 |   o   |   √   |   √   |   -   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   √   |   -   |
 | Texmaster                                                                             |   o   |   √   |   √   |   -   |   -   |   √   |   √   |   -   |     |   -   |   √   |    -     |   -   |   -   |
