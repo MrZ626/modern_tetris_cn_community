@@ -15,6 +15,7 @@
 | 2020.11.10     | Tetris Effect: Connected发布   |
 | 2019.06.26     | Techmino的生日（官方指定）     |
 | 2023.06.10     | Techmino下线App Store          |
+| 2023.09.29     | Betrix上线Steam                |
 | 2025.11.06     | Stackflow上线Steam             |
 | 2025.12.11     | Quadra Break下线Steam          |
 | 2026.02.07     | Enhance的b站官方账号上线       |
