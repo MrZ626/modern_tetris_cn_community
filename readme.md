@@ -180,6 +180,7 @@
 - [块圈大事记](chronicle.md)
 - [什么是“现代”块？](modern_stacker.md)
 - [俄罗斯方块的版权？](legal_issues.md)
+- [一个不知名文档术语对照表翻译](glossary_translation.md)
 
 ## 维护者列表
 
