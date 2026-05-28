@@ -22,7 +22,7 @@ local footnote={
 }
 local gameDatabase={
     --热帅免 新 多单 键 手网计 参 官 研 （热门 音画质量 免费 创新 多人 单人 可调键位 手机 网页 电脑 参数可调 官方 研究工具）
-    {2,2,2,2,1,2,2,2,1,2,2,0,2,"tech;techmino;铁壳;铁壳米诺;方块研究所","Techmino","studio26f.org","大规模缝合了常见现代块内容，可练习可挑战\n目前最新版本0.17.21，可以和约好友联机对战\n苹果用户见 #铁壳ios #铁壳mac"},
+    {2,2,2,2,1,2,2,2,1,2,2,0,2,"tech;techmino;铁壳;铁壳米诺;方块研究所","Techmino","studio26f.org","大规模缝合了常见现代块内容，可练习可挑战\n目前最新版本0.17.21，另见续作 #Techmino Downstacking\n苹果用户见 #铁壳ios #铁壳mac"},
     {2,2,2,1,2,2,2,0,2,2,2,0,2,"io;tetrio;tetr.io","TETR.IO","tetr.io","应该是目前全世界在线人数最多的现代块游戏\n另见#io qp2"},
     {2,2,0,2,2,2,2,0,0,2,0,2,0,"tec;tetris effect;tetris effect connected","Tetris Effect: Connected","store.steampowered.com/app/1003590","卖点是沉浸音画体验和基于创新的Zone机制的各种模式（包括多人在线不对称竞技）"},
     {2,2,0,1,2,2,2,0,0,2,0,2,0,"ppt;puyo puyo tetris;ppt2;ppt2s","Puyo Puyo Tetris","store.steampowered.com/app/546050","包含Tetris和PuyoPuyo两个下落消除游戏，二者间可以对战\n注：PPT2的手感据很多人说都不行"},
@@ -60,7 +60,7 @@ local gameDatabase={
     {1,2,1,1,2,2,2,0,2,2,2,0,1,"god of stackers;gos","God of Stackers","godofstackers.com","有角色、技能、抽卡系统，目前还在开发阶段"},
     {1,2,0,2,0,2,2,0,0,2,2,0,1,"betrix","Betrix","store.steampowered.com/app/2007710","在方块里加入了音游元素，也有40L等基础模式"},
     {1,2,0,1,2,1,1,0,0,0,0,2,0,"t99;tetris 99","Tetris 99","","主打99人混战的吃鸡模式，也有一些常用单机模式如马拉松等\n游戏基础模式有NS Online会员可以免费玩，其他单机模式需要额外购买"},
-    {1,2,0,1,0,2,2,0,0,2,2,0,1,"techDS;techmino downstacking;techmino downstack;tds;方块研究所挖掘部;方块研究所挖掘;铁壳米诺挖掘部;铁壳米诺挖掘;铁壳挖掘部;铁壳挖掘","Techmino Downstacking","store.steampowered.com/app/4568800","Techmino的续作系列第一作，专注于挖掘玩法"},
+    {1,2,0,1,0,2,2,0,0,2,2,0,1,"techDS;techmino downstacking;techmino downstack;tds;方块研究所挖掘部;铁壳挖掘部;铁壳挖掘;铁挖;挖掘部","Techmino Downstacking","store.steampowered.com/app/4568800","Techmino的续作系列第一作，专注于挖掘玩法"},
     {1,2,0,1,0,2,2,0,0,2,1,2,1,"tetris forever;forever;永恒;永恒篇","Tetris Forever","store.steampowered.com/app/3180240","俄罗斯方块40周年作，总体上是一个电子展览馆而不是游戏，按Tetris的历史发展排列了一份纪录片和各种图片资料，还内置了模拟器用来体验一些老游戏"},
     {1,2,0,1,0,2,0,2,0,0,0,2,0,"beat;tetris beat","Tetris Beat","","N3TWORK代理的一款移动端方块，除了马拉松外有“Beat模式”，根据BGM的节奏落块得到额外分数，但体验一般，特效还比较瞎眼"},
     {1,1,2,2,2,0,2,0,2,2,2,0,0,"tetrio.io;tetrioio;ioio","TETRIO.IO","tetrio.io","无hold有next的对战块，但两个玩家在同一个场地的两头拔河，说不太清总之很好玩，有简单的分数系统能匹配对战，或者约好友\n注：本游戏和TETR.IO完全无关"},
@@ -76,11 +76,11 @@ local gameDatabase={
     {1,0,2,2,2,1,2,1,2,2,2,0,0,"kos;king of stackers","King of Stackers","kingofstackers.com/games.php","主要玩法类似下棋，每个人以7块为一个回合轮流操作，策略性很强"},
     {1,0,2,1,0,2,2,0,0,2,2,0,2,"four;fourtris;four-tris","Four-tris","","单机自由沙盘，可以方便地随时自定义序列、绘制和删除地形、撤销和前进步骤，有截图识别地形功能，有多个练习模式，非常适合进行各种练习、复盘、绘制地形"},
     {1,0,2,0,0,2,2,2,2,2,2,0,2,"ztrix","Ztrix","ztrix-game.web.app","TEC的Zone练习用工具游戏，有自定义序列和撤销和出题等功能"},
-    {1,0,2,0,0,2,2,1,2,2,0,0,2,"ttt","TTT","(翻译后挂在茶服的版本) teatube.cn/TTT","现代方块特殊操作手把手教程，推荐能全部消四完成40L挑战的人学习，内含极简、SRS、T-Spin、部分对战定式等内容的教程"},
+    {1,0,2,0,0,2,2,1,2,2,0,0,2,"ttt","TTT","(翻译后挂在茶服的版本) teatube.cn/ttt","现代方块特殊操作手把手教程，推荐能全部消四完成40L挑战的人学习，内含极简、SRS、T-Spin、部分对战定式等内容的教程"},
     {1,0,2,0,0,2,2,1,2,2,0,0,2,"ttpc","TTPC","(翻译后挂在茶服的版本) teatube.cn/ttpc","SRS+Bag7方块游戏全消开局定式的教程（只能键盘操作）。推荐完成了TTT的人学习（必须先学会SRS）"},
     {1,0,2,0,0,2,2,1,2,2,0,0,2,"tpo","TPO","47.92.33.38/tpo","由TCV100制作的题库网站，内含部分nazo的题"},
     {1,0,2,0,0,2,2,1,2,2,0,0,2,"nazo","NAZO","(翻译后挂在茶服的版本) teatube.cn/nazo","内含各种T-Spin/All-Spin题目，简单到极难题目都有"},
-    {1,0,2,0,0,2,0,2,2,2,0,0,2,"fumen;方块谱;编辑器;铺面","Fumen","fumen.zui.jp  knewjade.github.io/fumen-for-mobile","方块版面编辑器，可以用于分享定式，PC解法等。"},
+    {1,0,2,0,0,2,0,2,2,2,0,0,2,"fumen;方块谱;编辑器","Fumen","fumen.zui.jp  knewjade.github.io/fumen-for-mobile","方块版面编辑器，可以用于分享定式，PC解法等。"},
     {0,2,2,2,0,2,0,2,0,0,0,2,0,"ea;tetris ea","（离线）Tetris (EA)","","EA代理的一款宇宙主题的移动端方块。有滑动操控和单点触控两种操作模式，已于2020年4月下架","除经典的马拉松外还有一个星系模式（地图挖掘），有重力连锁机制，目标是在限定块数内消除所有地图块"},
     {0,2,2,1,0,2,2,0,2,0,1,2,0,"tetris stardust;stardust","Tetris Stardust","","TO的官方改版，只有一个40行打分模式，奖励花里胡哨的spin（包括O-spin）"},
     {0,2,2,0,2,2,2,0,0,2,1,2,0,"to;top;toj;tos;tetris online","（私服）Tetris Online","","主要用来6人内对战/单挑/刷每日40L榜/挖掘模式/打机器人","现在还开着的服务器有：TO-P（波兰服，服务器在波兰，可能会卡顿）；TO-S（研究服，研究群群友自己开的服更稳定）"},

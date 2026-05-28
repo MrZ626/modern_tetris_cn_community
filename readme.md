@@ -142,7 +142,7 @@
 | [King of Stackers](https://kingofstackers.com/games.php)                              |   o   |   -   |   √   |   √   |   √   |   o   |   √   |   o   |     |   √   |   √   |    √     |   -   |   -   |
 | Four-tris                                                                             |   o   |   -   |   √   |   o   |   -   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   √   |
 | [Ztrix](https://ztrix-game.web.app)                                                   |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   √   |     |   √   |   √   |    √     |   -   |   √   |
-| [TTT](https://teatube.cn/TTT)                                                         |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
+| [TTT](https://teatube.cn/ttt)                                                         |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
 | [TTPC](https://teatube.cn/ttpc)                                                       |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
 | [TPO](https://47.92.33.38/tpo)                                                        |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
 | [NAZO](https://teatube.cn/nazo)                                                       |   o   |   -   |   √   |   -   |   -   |   √   |   √   |   o   |     |   √   |   √   |    -     |   -   |   √   |
