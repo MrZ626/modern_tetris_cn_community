@@ -128,8 +128,8 @@
 | btb_break                    | 断b2b                              |
 | mmstart                      | TL开始匹配                         |
 | matchintro                   | TL开赛                             |
-| victory                      | TL胜利                             |
-| applause                     |                                    |
+| victory                      | TL胜利（音乐）                     |
+| applause                     | TL胜利（掌声）                     |
 | ranklower                    | TL降段                             |
 | rankraise                    | TL升段                             |
 | ratinglower                  | TL扣分                             |
@@ -149,17 +149,17 @@
 | garbage_out_small            | 发出攻击（小）                     |
 | garbage_out_medium           | 发出攻击（中）                     |
 | garbage_out_large            | 发出攻击（大）                     |
-| damage_alert                 |                                    |
+| damage_alert                 | 红条达到危险值（再涨一次超过20）   |
 | detonate1                    | 长按放弃                           |
 | detonate2                    | 长按放弃                           |
 | detonated                    | 长按放弃                           |
-| exchange                     |                                    |
 | garbagerise                  | 垃圾行出现                         |
 | garbagesmash                 |                                    |
 | impact                       |                                    |
 | inject                       | 注入（垃圾行无红条直接进场）       |
 | offset                       | 抵消                               |
-| counter                      | 抵消了全部红条                     |
+| counter                      | 刚好抵消了全部红条                 |
+| exchange                     | 特定规则下两边同时攻击没抵消？     |
 | warning                      | qp2疲劳警报                        |
 | garbagewindup_1              | qp2 windup一级（噔）               |
 | garbagewindup_2              | qp2 windup二级（噔噔）             |
