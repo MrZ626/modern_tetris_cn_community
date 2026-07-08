@@ -93,7 +93,7 @@
 | [TETR.IO](https://tetr.io)                                                            |   √   |   √   |   √   |   o   |   √   |   √   |   √   |   -   |     |   √   |   √   |    √     | -[^2] |   √   |
 | [Tetris Effect: Connected](https://store.steampowered.com/app/1003590)                |   √   |   √   |   -   |   √   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   √   |   -   |
 | [Puyo Puyo Tetris](https://store.steampowered.com/app/546050)                         |   √   |   √   |   -   |   o   |   √   |   √   |   √   |   -   |     |   -   |   √   |    -     |   √   |   -   |
-| [Jstris](https://jezevec10.com)                                                       |   √   |   -   |   √   |   o   |   √   |   √   |   √   | o[^3] |     |   √   |   √   |    √     |   -   |   o   |
+| [Jstris](https://jstris.jezevec10.com)                                                |   √   |   -   |   √   |   o   |   √   |   √   |   √   | o[^3] |     |   √   |   √   |    √     |   -   |   o   |
 | [Worldwide Combos](https://worldwidecombos.com)                                       |   o   |   √   |   √   |   √   |   √   |   √   |   √   |   -   |     |   √   |   √   |    √     |   -   |   -   |
 | [Cultris II](https://gewaltig.net)                                                    |   o   |   √   |   √   |   √   |   √   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   -   |
 | [Spirit Drop](https://rayblastgames.com/spiritdrop.php)                               |   o   |   √   |   √   |   √   |   o   |   √   |   √   |   -   |     |   -   |   √   |    √     |   -   |   o   |
@@ -169,7 +169,7 @@
 [^9]: 不支持自定义布局，只能在几个预设布局间切换。
 [^10]: IOS独占。
 [^11]: 被DMCA然后下架了。
-[^12]: 授权到期且未续约，已停服。
+[^12]: 授权到期且未续约，已停服
 <!-- 增/改脚注也不要直接改这里，去改 game_db.lua 文件开头的 footnote 表 -->
 
 ## 其他页面
