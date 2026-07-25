@@ -183,6 +183,7 @@
 - [什么是“现代”块？](modern_stacker.md)
 - [俄罗斯方块的版权？](legal_issues.md)
 - [以QQ群为线索的社区发展历程](qq_group_history.md)
+- [风暴头脑（神人语录）](stormbrain.md)
 
 ## 维护者列表
 
