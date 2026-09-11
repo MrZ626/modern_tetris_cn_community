@@ -9,14 +9,17 @@
 - 较大规模比赛（结束日期和冠军写在事件内容里）
 - 方块官方动静
 
-| 日期（年月日） | 事件                           |
-| -------------- | ------------------------------ |
-| 2018.11.09     | Tetris Effect发布              |
-| 2020.11.10     | Tetris Effect: Connected发布   |
-| 2019.06.26     | Techmino的生日（官方指定）     |
-| 2023.06.10     | Techmino下线App Store          |
-| 2023.09.29     | Betrix上线Steam                |
-| 2025.11.06     | Stackflow上线Steam             |
-| 2025.12.11     | Quadra Break下线Steam          |
-| 2026.02.07     | Enhance的b站官方账号上线       |
-| 2026.04.26     | Techmino-Downstacking上线Steam |
+| 日期（年月日） | 事件                                                    |
+| -------------- | ------------------------------------------------------- |
+| 2018.11.09     | Tetris Effect发布                                       |
+| 2020.11.10     | Tetris Effect: Connected发布                            |
+| 2019.06.26     | Techmino的生日（官方指定）                              |
+| 2023.06.10     | Techmino下线App Store                                   |
+| 2023.09.29     | Betrix上线Steam                                         |
+| 2024.11.28     | Tetris Forever上线Steam                                 |
+| 2025.04.04     | TGM4上线Steam                                           |
+| 2025.11.06     | Stackflow上线Steam                                      |
+| 2025.12.11     | Quadra Break下线Steam                                   |
+| 2026.02.07     | Enhance的b站官方账号上线                                |
+| 2026.04.26     | Techmino-Downstacking上线Steam                          |
+| 2026.09.??     | TSL世界赛在IO举办9.7圆满结束 前三ICLY-COFFILTER-VEXSERY |
