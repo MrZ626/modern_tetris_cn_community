@@ -110,7 +110,7 @@ function Loop() {
             Z.bonusremaining -= delta;
         }
 
-    // 不让用“推进器随时间爬升”途径上楼
+    // 完成教学前不让上F2
     if (SET.zenith_tutorial && STAT.zenith.altitude >= 50 && Z.tutorial.stage > 0 && Z.tutorial.stage < 5) {
         STAT.zenith.altitude = Math.min(49.99, height0);
         Z.bonusremaining = 0;
