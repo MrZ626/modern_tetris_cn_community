@@ -662,8 +662,10 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关，在背�
     - 出处为TGM系列(Tetris The Grand Master)，考察高重力+隐形
 - 【EX】【MS】 Block Rationing 方块紧缺
     - `特殊目标：前400块总攻击数`，使用EX和MS大幅增加混乱度，让最优解不是纯靠挖掘垃圾行
+    - 注：该Mod组合本身没有独立的名字，条目名只是对应的成就名称
 - 【EX】【2P】 Trained Professionals 专业团队
     - 实际难度会因【2P】攻击减半和【EX】加速经验流失的组合而高很多
+    - 注：该Mod组合本身没有独立的名字，条目名只是对应的成就名称
 - 【NH】【MS】【DH】 Deadlock 僵局
     - 无Hold会使得挖掘难度增加
 - 【MS】【DH】【AS】 The Escape Artist 逃脱大师
