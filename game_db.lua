@@ -43,6 +43,7 @@ local gameDatabase={
     {1,2,2,1,0,2,2,0,2,2,2,0,0,"tetra legends","Tetra Legends","tetralegends.app","有两个隐藏的节奏模式，并且将一些其他游戏中不可见的机制进行了可视化，动效也很多。于2020年12月基本确定由于各种原因不再继续开发"},
     {1,2,2,1,0,2,2,0,0,2,2,0,1,"misa;misamino","Misamino","","比较工具的游戏，与AI进行回合制对战，可以导入外部AI程序"},
     {1,2,2,1,0,2,2,0,0,2,2,0,0,"剑桥;cambridge","Cambridge","github.com/Tetro48/cambridge","致力于创建一个轻松高度自定义新模式的方块平台。最初由Joe Zeng开发，于2020年10月8日0.1.5版开始Milla接管了开发。 — Tetris Wiki."},
+    {1,2,2,1,0,2,2,0,0,2,2,0,0,"techBC;techmino bootcamp;tbc;方块研究所训练营;铁壳训练营;铁壳训练;铁训;训练营","Techmino Bootcamp","github.com/26F-Studio/Techmino-Bootcamp/releases/latest","Techmino的续作系列第二作，专注于极简训练"},
     {1,2,2,1,0,2,2,0,0,2,0,0,0,"hebo;heboris","Heboris","","仿街机方块游戏，可以模拟多个方块游戏的部分模式"},
     {1,2,2,1,0,2,2,0,0,2,0,0,0,"example block game;ebg","Example Block Game","github.com/Oshisaure/example-block-game","仿TGM的街机方块游戏，有一个不区分szi正反朝向的旋转系统"},
     {1,2,2,1,0,2,1,1,0,1,0,2,0,"tetris giant;giant;dekaris","Tetris Giant (Dekaris)","","街机游戏，6*7的场地，有限时打分模式和一个比行数的生存模式"},
