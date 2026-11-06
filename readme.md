@@ -121,8 +121,8 @@
 |[Apotris](https://akouzoukos.com/apotris)|o|√|√|o|-|√|√|o||o|o|√|-|√|
 |[Tetra Legends](https://tetralegends.app)|o|√|√|o|-|√|√|-||√|√|√|-|-|
 |Misamino|o|√|√|o|-|√|√|-||-|√|√|-|o|
-|[Cambridge](https://github.com/Tetro48/cambridge)|o|√|√|o|-|√|√|-||-|√|√|-|-|
 |[Techmino Bootcamp](https://github.com/26F-Studio/Techmino-Bootcamp/releases/latest)|o|√|√|o|-|√|√|-||-|√|√|-|-|
+|[Cambridge](https://github.com/Tetro48/cambridge)|o|√|√|o|-|√|√|-||-|√|√|-|-|
 |Heboris|o|√|√|o|-|√|√|-||-|√|-|-|-|
 |[Example Block Game](https://github.com/Oshisaure/example-block-game)|o|√|√|o|-|√|√|-||-|√|-|-|-|
 |Tetris Giant (Dekaris)|o|√|√|o|-|√|o|o||-|o|-|√|-|
@@ -133,6 +133,7 @@
 |决战方块|o|√|√|-|√|√|√|√||-|-|√|-|-|
 |Tetris (N3TWORK)|o|√|√|-|√|√|-|√||-|-|-|√|-|
 |[tetris.com](https://play.tetris.com)|o|√|√|-|-|√|√|√||√|√|√|√|-|
+|[Tetra Nova](https://neuroi014.github.io/tetra-nova)|o|√|√|-|-|√|√|-||√|√|o|-|-|
 |Texmaster|o|√|√|-|-|√|√|-||-|√|-|-|-|
 |Tetris (NES, Nintendo)|o|√|√|-|-|√|o|o||o|o|-|√|-|
 |[God of Stackers](https://godofstackers.com)|o|√|o|o|√|√|√|-||√|√|√|-|o|
