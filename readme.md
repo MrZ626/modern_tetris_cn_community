@@ -121,7 +121,7 @@
 |[Apotris](https://akouzoukos.com/apotris)|o|√|√|o|-|√|√|o||o|o|√|-|√|
 |[Tetra Legends](https://tetralegends.app)|o|√|√|o|-|√|√|-||√|√|√|-|-|
 |Misamino|o|√|√|o|-|√|√|-||-|√|√|-|o|
-|[Techmino Bootcamp](https://github.com/26F-Studio/Techmino-Bootcamp/releases/latest)|o|√|√|o|-|√|√|-||-|√|√|-|-|
+|[Techmino Bootcamp](https://github.com/26F-Studio/Techmino-Bootcamp)|o|√|√|o|-|√|√|-||-|√|√|-|-|
 |[Cambridge](https://github.com/Tetro48/cambridge)|o|√|√|o|-|√|√|-||-|√|√|-|-|
 |Heboris|o|√|√|o|-|√|√|-||-|√|-|-|-|
 |[Example Block Game](https://github.com/Oshisaure/example-block-game)|o|√|√|o|-|√|√|-||-|√|-|-|-|
@@ -166,7 +166,7 @@
 |TGM1|-|√|√|o|-|√|√|o||-|o|-|√|-|
 |Tetris Stardust|-|√|√|o|-|√|√|-||√|-|o|√|-|
 |（私服）Tetris Online|-|√|√|-|√|√|√|-||-|√|o|√|-|
-|[（离线）Tetra Online](https://github.com/Juan-Cartes/Tetra-Offline/releases/tag/1.0)|-|√|√|-|√|√|√|-||-|√|-|-|-|
+|[（离线）Tetra Online](https://github.com/Juan-Cartes/Tetra-Offline)|-|√|√|-|√|√|√|-||-|√|-|-|-|
 |[（私服）Tetris Friends](https://notrisfoes.com)|-|√|√|-|√|√|o|-||√|√|o|√|-|
 |（离线）Tetris Blitz|-|√|o|√|-|√|-|√||-|-|-|√|-|
 |（下线）Tetris Journey[^9]|-|√|o|o|o|√|√|√||-|-|-|√|-|
