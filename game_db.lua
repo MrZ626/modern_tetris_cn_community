@@ -19,7 +19,7 @@ local footnote={
 }
 local gameDatabase={
     --热帅免 新 多单 键 手网计 参 官 研 （热门 音画质量 免费 创新 多人 单人 可调键位 手机 网页 电脑 参数可调 官方 研究工具）
-    {2,2,2,2,1,2,2,2,1,2,2,0,2,"tech;techmino;铁壳;铁壳米诺;方块研究所","Techmino","studio26f.org","大规模缝合了常见现代块内容，可练习可挑战\n目前最新版本0.17.21，另见续作 #Techmino Downstacking\n苹果用户见 #铁壳ios #铁壳mac"},
+    {2,2,2,2,1,2,2,2,1,2,2,0,2,"tech;techmino;铁壳;铁壳米诺;方块研究所","Techmino","26f.studio","大规模缝合了常见现代块内容，可练习可挑战\n目前最新版本0.17.21，另见续作 #Techmino Downstacking\n苹果用户见 #铁壳ios #铁壳mac"},
     {2,2,2,1,2,2,2,0,2,2,2,0,2,"io;tetrio;tetr.io","TETR.IO","tetr.io","应该是目前全世界在线人数最多的现代块游戏\n另见#io qp2"},
     {2,2,0,2,2,2,2,0,0,2,0,2,0,"tec;tetris effect;tetris effect connected","Tetris Effect: Connected","store.steampowered.com/app/1003590","卖点是沉浸音画体验和基于创新的Zone机制的各种模式（包括多人在线不对称竞技）"},
     {2,2,0,2,0,2,2,0,0,2,0,2,0,"tgm4;ae","TGM4 （Absolute Eye）","store.steampowered.com/app/3328480","TGM4从街机游戏转为了PC游戏，包含了大量内容丰富的新模式和前作模式重现，详见tetriswiki.cn/p/TGM4\n另见 #tgm #tgm1~4"},
