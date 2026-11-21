@@ -32,8 +32,6 @@
 
 （重力开始增加的时间 **gmargin=0**，也就是从开局就开始增加）
 
-> 注：这些参数配置在自定义预设中的"classic"里
-
 ## 推进器
 
 `推进器等级`（下称`等级`）决定了爬塔的速度，所有增加高度的行为都受到这个倍率的加成，升级推进器需要经验
@@ -42,17 +40,16 @@
 
 ### 经验
 
-|   动作   |  高度   |             经验             | 备注                                                                                 |
-| :------: | :-----: | :--------------------------: | :----------------------------------------------------------------------------------- |
-| 自然增加 | 每秒 1m | 自然流失，详见`经验流失`章节 | 会`卡层`，距下层6m~1m时逐渐变为0                                                     |
-|   击杀   |   15m   |                              | 【rEX】或被击杀者有【SB】时改为8m                                                    |
-|   发送   | `行数`m |       `行数+0.05`经验        |                                                                                      |
-|   抵消   |         |       `行数+0.05`经验        | 【(r)EX】【rVL】【r2P】时视为抵消0行                                                 |
-|   消行   |         |    `min(行数,2)+0.05`经验    | 【(r)EX】时***不触发***，【rAS】时非spin均视为消1行                                  |
-|  `越层`  |   3m    |                              | 判定条件是目前高度(算上还未释放的临时高度)距下层在2m内时***触发***发送/抵消/消行之一 |
+|   动作   |  高度   |             经验             | 备注                                                               |
+| :------: | :-----: | :--------------------------: | :----------------------------------------------------------------- |
+| 自然增加 | 每秒 1m | 自然流失，详见`经验流失`章节 | 会`卡层`，距下层6m~1m时逐渐变为0                                   |
+|   击杀   |   15m   |                              | 【rEX】或被击杀者有【SB】时改为8m                                  |
+|   发送   | `行数`m |       `行数+0.05`经验        |                                                                    |
+|   抵消   |         |       `行数+0.05`经验        | 【(r)EX】【rVL】【r2P】时视为抵消0行                               |
+|   消行   |         |    `min(行数,2)+0.05`经验    | 【(r)EX】时***不触发***，【rAS】时非spin均视为消1行                |
+|  `越层`  |   3m    |                              | 判定条件是***触发***发送/抵消/消行之一时，将达到的高度距下层在2m内 |
 
 > 上述高度增加除了`越层`外都受`等级`影响，例如开局时`等级`为1，倍率为×0.25，每4秒增加1m  
-> `抵消惩罚`（计算公式详见后文）会让抵消获得的经验减少。当`抵消惩罚`超过`连续抵消扣经验阈值`后，每多出1会让公式中的50%减少0.5%，最低5%。这个阈值在开了【(r)VL】时是40，否则开了【(r)AS】时是10，否则是25
 
 获得高度时，新增的高度会先存入一个临时变量，每帧释放10%，最大10m
 
@@ -82,12 +79,12 @@
 经验会随时间自然流失，每帧减少 `mul*(等级^2+等级)/3600` 点  
 其中的mul为：单人正常=3，开【(r)EX】或【r2P】时=5；双人时=3+专家人数
 
-当经验小于0时候降级，经验变为上一级的满经验
+当经验小于0时候降级，然后*增加*上一级的满经验数
 
 推进器升级时会获得一个5秒的`经验流失保护`效果，防止升级后只剩一点点经验瞬间流失完导致立刻降级
 
 `升级疲劳`机制：每次升级后，上一行中的`5秒不流失`会减少1秒（直至1秒），所以反复升降`等级`时这个效果就会越来越弱。  
-想恢复的话需要在一次升级动作（而非降级）后紧接着达到50%（经验条中间的斜坡顶部），之后再触发此效果就会有5秒了
+想恢复的话需要在一次升级动作（而非降级）后达到50%（经验条中间的斜坡顶部），之后再触发经验流失保护时就会有5秒了
 
 以下列出一些算好的数据方便查阅：
 
@@ -150,13 +147,13 @@
 会出现花里胡哨的致敬Bejeweled Twist的动画，和专属速通音乐
 
 屏幕顶部出现大字显示当前局时间，底部列出完成前9层花的时间和离个人纪录的分段差异  
-到10层时完成速通模式获得一个隐藏成就，或者`等级`掉到6级时会退出速通模式
+到10层时完成速通模式获得一个隐藏成就，保持速通需要`等级`一直在7级或以上，掉到6后就会退出速通模式（可以按当前层数的等级需求重新进入）
 
 开启任何mod时也会禁用速通
 
 如果你靠硬实力无法打进速通，不得不用蓄力攻击，那么根据上文`跳级`章节的图像可以得到以下二级结论：
 - 故意拖延到掉级后再立刻断b，此时只需要70蓄力攻击就能几乎保证进速通（不管时机就需要80甚至90）
-- 攻击缓冲条最好空着，因为抵消行的经验会被减半，如果做到完美的话只需要60就可以刚好到门口，趁5秒保护马上补满即可
+- 如果有实力基础的话60就足够到门口，然后趁5秒保护时间内把提前攒好的连击楼等资源打出，就能进去了
 
 ## 受击权重
 
@@ -166,20 +163,20 @@
 
 ### 危险时临时减免
 
-（`困难模式`下禁用）每0.25秒刷新一次，如果“处于危险中”（详细条件没看懂，当成到顶版面闪红警告吧，不会差很多），`受击权重`会临时减1.5，脱离危险后1.5会加回来
+（`困难模式`下禁用）每0.25秒检查一次：若场地最高占用行+红条高度≥16，`受击权重`临时减1.5，脱离后1.5会加回来。
 
 ### 随时间增加 （7分钟封顶翻一倍）
 
 当时间达到3/5/7分钟时`受击权重`+1
 
-`受击权重`随时间/被快速打满/处于危险状态中的变化：
+`受击权重`随时间/处于危险状态中的变化：
 
-| 时间段  | 权重  | 打满时 | 危险时 |
-| ------- | :---: | :----: | :----: |
-| 0~2分钟 |   3   | -100%  |  -50%  |
-| 3~4分钟 |   4   |  -75%  |  -75%  |
-| 5~6分钟 |   5   |  -66%  |  -60%  |
-| 7分钟后 |   6   |  -50%  |  -25%  |
+| 时间段  | 权重  | 危险时 |
+| ------- | :---: | :----: |
+| 0~2分钟 |   3   |  -50%  |
+| 3~4分钟 |   4   | -37.5% |
+| 5~6分钟 |   5   |  -30%  |
+| 7分钟后 |   6   |  -25%  |
 
 ### 垃圾行保护（默认关闭，仅在部分Mod开启时使用，详见后文）
 
@@ -224,6 +221,8 @@
 
 如果收到了单次发送的8点及以上的攻击，这个攻击会被特殊处理，拆分成多段接收并带有预警提示，防止由于各种原因导致受击倍率增加后过于容易暴毙
 
+> 注：取的是经过惩罚、保护、受击倍率和取整后的数量，不是攻击者的原始输出
+
 具体拆分规则：
 - 定义`假想攻击`=16
 - 从4000m开始，每过一个500m的倍数，`假想攻击`+1
@@ -243,8 +242,10 @@ S         A    A    E
 0   0.5   1   1.5   2   2.5   3
 S：开始阶段，播放感叹号动画，占用1s
 A：攻击阶段，每段攻击占用0.5s
-E：结束阶段，占用1s，作用不明，在代码中有一个windup_until计时器，吃到多段攻击时被设为了`2+0.5*段数`(秒)，对应这个阶段的结束时的时间点
+E：结束阶段，占用1s。windupwaituntil 对应整个流程结束的时间点；从流程开始到结束共 2+0.5*段数 秒。
 ```
+
+后续Windup会排队等到 `windupwaituntil` 后才开始。在该时间窗口内，抵消惩罚的攻击量上限还会先与6取较小值，再按VL规则调整（详见下文）。时间轴中的A表示投放攻击段，不等于垃圾已升入场地。
 
 ## 其他攻击相关
 
@@ -280,6 +281,8 @@ E：结束阶段，占用1s，作用不明，在代码中有一个windup_until�
 - 50: L/J随机一块，T/I随机一块
 - 60: S/Z随机一块
 
+> 注：开启【VL】时抵消量翻倍了所以上述阈值也调整到了两倍，但一次性的i5仍在40触发
+
 还会缩短垃圾行等待时间，详见`垃圾行等待时间`章节  
 还会增加收到的垃圾行数量，详见`受击数量计算`章节
 
@@ -295,16 +298,18 @@ E：结束阶段，占用1s，作用不明，在代码中有一个windup_until�
 
 | 层数  | 释放间隔（秒） | 【rEX】时 |
 | :---: | :------------: | :-------: |
-|   1   |      4.8       |    1.0    |
-|   2   |      3.9       |    0.9    |
-|   3   |      2.1       |    0.8    |
-|   4   |      1.4       |    0.7    |
-|   5   |      1.3       |    0.6    |
-|   6   |      0.9       |    0.5    |
-|   7   |      0.6       |    0.4    |
-|   8   |      0.4       |    0.3    |
-|   9   |      0.3       |    0.2    |
-|  10   |      0.2       |    0.1    |
+|   1   |    3.8(4.8)    |    1.0    |
+|   2   |    3.0(3.9)    |    0.9    |
+|   3   |    2.3(2.1)    |    0.8    |
+|   4   |    1.7(1.4)    |    0.7    |
+|   5   |    1.2(1.3)    |    0.6    |
+|   6   |    0.8(0.9)    |    0.5    |
+|   7   |    0.5(0.6)    |    0.4    |
+|   8   |    0.5(0.4)    |    0.3    |
+|   9   |    0.5(0.3)    |    0.2    |
+|  10   |    0.2(0.2)    |    0.1    |
+
+> 括号外的值是每次开始游戏时服务端下发的配置，实际使用的应该是它，括号内是写死在代码里的值，应该是原始设计
 
 ### 受击数量计算
 
@@ -365,7 +370,7 @@ E：结束阶段，占用1s，作用不明，在代码中有一个windup_until�
 
 ## 垃圾混乱度
 
-垃圾行洞位置连续的概率。该值越大，每一行洞位置越容易都不同
+影响垃圾行洞位置连续的概率。该值越大，新垃圾行洞位置越容易变化
 
 TETR.IO中垃圾行的混乱度由两个数字决定：  
 间断洞位改变概率：“同一段垃圾中每一行有X%的概率重抽位置”  
@@ -375,8 +380,6 @@ TETR.IO中垃圾行的混乱度由两个数字决定：
 而在qp2中这两个数就不这么极端了，所以你会感觉qp2中垃圾行洞的位置似乎和几段垃圾行关系不大
 
 在qp2中，通常情况固定Y=2.5*X，也就是打入垃圾行的间断点处有更大的概率（2.5倍）不在同一列（超过100%时效果同100%但是会溢出）
-
-本文档中的`垃圾混乱度`就是这个X，会受到各种因素影响：
 
 - X=`层数*3%`，【(r)EX】时为`层数*5%`
 - 【MS】时X+25%，【rMS】时+100%
@@ -400,17 +403,18 @@ TETR.IO中垃圾行的混乱度由两个数字决定：
 
 详细的选择垃圾行洞位置流程：
 
-1. 计算每一列的`挖掘难度分`
-    1. 如果该列是最高列（之一）且没有空格，该列`挖掘难度分`为0
-    2. 找到该列最低的空格，找到场地最高点的高度
-    3. `挖掘难度分 = 空格到场地顶的高度差 + 5*空格到最浅垃圾行洞的水平距离`
-2. 根据`挖掘难度分`给十列进行排序，分低的也就是好挖的列在前（相同的值随机排）（曾经分高的在前，完全反了！唉谁写的代码）
-3. 根据`垃圾易挖度`计算概率分布，公式为`weight[i] = 10 + 垃圾易挖度 * (1 - i / 4.5)`，负数视为0
+1. 寻找横向距离参照列：从场地底部向上找第一行存在空格的行；若该行同时包含灰色垃圾格（`gb`），取该行最左空格作为参照列（不存在就跳过）
+2. 从顶部向下找到每列第一个非空格子，计算评分：
+    1. 非空列：`评分 = 该列最高占用格的高度 + 5*该列到参照列的水平距离`；没有参照列时距离项为0，高度相对于场地底部计算
+    2. 空列评分为0
+3. 根据评分给十列排序，分低的在前，同分的顺序随机，记住这个顺序用于下一步
+4. 根据`垃圾易挖度`计算概率分布，公式为`weight[i] = 10 + 垃圾易挖度 * (1 - i / 4.5)`，负数视为0
     1. 你可以在这个[Desmos文件](https://www.desmos.com/calculator/yfzabziltb)里观察一下图像
     2. 图像的X轴为列编号（左侧第0列最好挖，右侧第9列最难挖），Y轴为权重，用左侧滑块调整favor的值
-4. 根据上一步计算出的权重随机选择一列作为垃圾行的洞的位置
+5. 若启用 `messiness_nosame`，上次洞列的权重归零；启用垃圾集中时，限制范围外的列权重归零。根据最终权重随机选择一个列号
+6. 按照第4步的列顺序，取第“第5步选出的列号”个，就是最终的垃圾行洞位置。
 
-> 在旧版本中，该值的使用方式刚好弄反了，越大越难挖  
+> 在旧版本中，第三步的排序方向反了，越大越难挖（唉谁写的代码）  
 > 修复之后带有【EX】和【MS】的项目都会一定程度上变难，然而修复时旧的成绩并没有被删除
 
 ## 垃圾集中
@@ -428,22 +432,24 @@ TETR.IO中垃圾行的混乱度由两个数字决定：
 
 | 层数  |       普通       |  【(r)EX】   | 【rMS/rVL/rDH】 | 其他【rXX】 |
 | :---: | :--------------: | :----------: | :-------------: | :---------: |
-|   1   |   5.0秒 (300f)   | 2.2秒 (132f) |    **2.5秒**    |  **2.5秒**  |
-|   2   |   4.5秒 (270f)   | 2.0秒 (120f) |    **2.5秒**    |  **2.5秒**  |
-|   3   |   4.0秒 (240f)   | 1.8秒 (108f) |    **2.5秒**    |  **2.5秒**  |
-|   4   |   3.5秒 (210f)   | 1.6秒  (96f) |    **2.5秒**    |  **2.5秒**  |
-|   5   |   3.0秒 (180f)   | 1.4秒  (84f) |    **2.5秒**    |  **2.5秒**  |
-| **6** | **2.5秒 (150f)** | 1.2秒  (72f) |    **2.5秒**    |  **2.5秒**  |
-|   7   |   2.0秒 (120f)   | 1.0秒  (60f) |    **2.5秒**    |   `2.0秒`   |
-|   8   |   1.5秒  (90f)   | 0.8秒  (48f) |    **2.5秒**    |   `1.5秒`   |
-|   9   |   1.0秒  (60f)   | 0.6秒  (36f) |    **2.5秒**    |   `1.0秒`   |
-|  10   |   0.5秒  (30f)   | 0.4秒  (24f) |    **2.5秒**    |   `0.5秒`   |
+|   1   |   5.0秒 (300f)   | 2.0秒 (120f) |    **2.5秒**    |  **2.5秒**  |
+|   2   |   4.5秒 (270f)   | 1.8秒 (108f) |    **2.5秒**    |  **2.5秒**  |
+|   3   |   4.0秒 (240f)   | 1.6秒 (96f)  |    **2.5秒**    |  **2.5秒**  |
+|   4   |   3.5秒 (210f)   | 1.4秒 (84f)  |    **2.5秒**    |  **2.5秒**  |
+|   5   |   3.0秒 (180f)   | 1.2秒 (72f)  |    **2.5秒**    |  **2.5秒**  |
+| **6** | **2.5秒 (150f)** | 1.0秒 (60f)  |    **2.5秒**    |  **2.5秒**  |
+|   7   |   2.0秒 (120f)   | 0.8秒 (48f)  |    **2.5秒**    |   `2.0秒`   |
+|   8   |   1.5秒  (90f)   | 0.6秒 (36f)  |    **2.5秒**    |   `1.5秒`   |
+|   9   |   1.0秒  (60f)   | 0.4秒 (24f)  |    **2.5秒**    |   `1.0秒`   |
+|  10   |   0.5秒  (30f)   | 0.2秒 (12f)  |    **2.5秒**    |   `0.5秒`   |
 
 > 由于垃圾行要切换两次才进入激活状态，故代码中的数据是上表中的一半
 
+> 公式：普通 `165-15*层数` 帧，专家 `66-6*层数` 帧
+
 ### 抵消惩罚（没想到吧，这里也有）
 
-`连续抵消`达到25时，垃圾行倒计时减半
+`连续抵消`达到25且未启用【VL】时，垃圾行倒计时减半
 
 ## 疲劳时间
 
@@ -532,9 +538,11 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关，在背�
 > 涌现的灵感无异于魔法。
 
 - 非T块的Spin都能像T块一样提供消行数*2的基础伤害了（Spin判定规则见开头）
-- 每当进行消除时（准确说其实是锁定一块时如有冒出文本，不消行Spin也能触发），如果左上角提示文本完全一致，那么立刻出现一行特殊的实心垃圾行作为惩罚，上面随机位置写了一个倒计时数字为`当前层数+5`，当玩家做未被惩罚的消除时-1，归零时变为一行普通的单洞垃圾行，洞位置和数字位置一致
+- 每当进行消除或者落块时如果左上角弹出的提示文本和上次完全一致，那么立刻出现一行特殊的实心垃圾行作为惩罚，上面随机位置写了一个倒计时数字为`当前层数+5`，当玩家做未被惩罚的消除时-1，归零时变为一行普通的单洞垃圾行，洞位置和数字位置一致
 
-> 唯一一个玩家水平足够后能提供较大正面效果的Mod
+> “提示文本相同”是直观描述；实际比较的是消行数、Spin/Mini/普通消除分类，Spin类还会看是什么块，但B2B和Combo不参与比较。不消行的Spin能触发惩罚但不会降低计数器。
+
+> 是唯一一个玩家水平足够后显然能提供相当大正面效果的Mod
 
 ### 【2P】 Duo 双人 （恋人 The Lovers）
 
@@ -542,93 +550,93 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关，在背�
 > 去爱吧，与另一人休戚与共。
 
 - 会员玩家可以邀请其他人和自己两个人一起玩此模式
-- 单个玩家发送的攻击减半
+- 单个玩家对外发送出的攻击减半
 - 两个人都死了后游戏结束，但一个人死后另一个人可以做任务复活队友
 
 会出现的任务如下表：
 
-| 难度标记 | 内部id             | 目标数值 | 内容                                            | 外显文本                                                   | 标签类型（？） | 有特定Mod时不出现 |
-| -------- | ------------------ | -------- | ----------------------------------------------- | ---------------------------------------------------------- | -------------- | ----------------- |
-| F        | combo              | 3        | 3连击（四连消）                                 | Perform a 3-Combo                                          | 2              |                   |
-| F        | double             | 2        | 2 x 消二                                        | Clear 2 Doubles                                            | 2              |                   |
-| F        | quad               | 1        | 消四                                            | Clear a Quad                                               | 1              |                   |
-| F        | lines              | 6        | 消6行                                           | Clear 6 Lines                                              | 1              |                   |
-| F        | osingle            | 1        | O块消一                                         | Clear a Single\nusing an O-Piece                           | 3              |                   |
-| F        | odouble            | 1        | O块消二                                         | Clear a Double\nusing an O-Piece                           | 3              |                   |
-| F        | szdouble           | 1        | S/Z消二                                         | Clear a Double\nusing an S or Z-Piece                      | 3              |                   |
-| F        | ljtriple           | 1        | L/J消三                                         | Clear a Triple\nusing an L or J-Piece                      | 3              |                   |
-| F        | iholdlines         | 3        | 暂存着I 消三行                                  | Clear 3 lines\nwhile holding an I-Piece                    | 3              | 【NH】            |
-| F        | hold               | 8        | 暂存8下                                         | Use Hold 8 times                                           | 2              | 【NH】            |
-| F        | rotate             | 20       | 转20下                                          | Rotate 20 times                                            | 2              |                   |
-| F        | singleconsecutive  | 2        | 2连消一                                         | Clear 2 Singles in a row                                   | 3              |                   |
-| E        | spin               | 1        | 任意spin                                        | Perform any Spin                                           | 2              |                   |
-| E        | tspinsingle        | 1        | T旋消一                                         | Clear a T-Spin Single                                      | 2              |                   |
-| E        | tspindouble        | 1        | T旋消二                                         | Clear a T-Spin Double                                      | 2              |                   |
-| E        | szspin             | 1        | S/Z旋消除                                       | Clear an S/Z-Spin                                          | 1              |                   |
-| E        | ljspin             | 1        | L/J旋消除                                       | Clear an L/J-Spin                                          | 1              |                   |
-| E        | combo              | 5        | 5连击（六连消）                                 | Perform a 5-Combo                                          | 2              |                   |
-| E        | iflat              | 2        | 2 x 横放I消一                                   | Clear 2 Lines using\nhorizontal I-Pieces                   | 3              |                   |
-| E        | pieces             | 20       | 放20块                                          | Place 20 pieces                                            | 2              |                   |
-| E        | attack             | 6        | 送出6行攻击                                     | Send 6 Attack                                              | 1              |                   |
-| E        | placeoconsecutive  | 2        | 连放两块O                                       | Place 2 O-Pieces\nin a row                                 | 3              | 【NH】            |
-| E        | norotateclockwise  | 12       | 只用逆时针转 连放12块（其他旋转时重来）         | Place 12 pieces while only\nrotating counterclockwise      | 4              |                   |
-| E        | singlenocombo      | 6        | 6 x 消一 不连击（二连消时重来）                 | Clear 6 Singles without\nstarting a combo                  | 3              |                   |
-| D        | double             | 4        | 4 x 消二                                        | Clear 4 Doubles                                            | 2              |                   |
-| D        | spam               | 3        | 不转不移 连放3块                                | Place 3 pieces in a row\nwithout moving or rotating        | 4              |                   |
-| D        | noclear            | 14       | 不消行 连放14块                                 | Place 14 pieces in a row\nwithout clearing any lines       | 4              |                   |
-| D        | szdouble           | 2        | 2 x S/Z消二                                     | Clear 2 Doubles\nusing S or Z-Pieces                       | 3              |                   |
-| D        | ljtriple           | 2        | 2 x L/J消三                                     | Clear 2 Triples\nusing L or J-Pieces                       | 3              |                   |
-| D        | ispinclear         | 1        | I旋消除                                         | Clear an I-Spin                                            | 1              |                   |
-| D        | upperhalfquad      | 1        | 在上半场消四（I块最低格至少第10行）             | Clear a Quad in the\nupper half of the board               | 4              |                   |
-| D        | rotate             | 80       | 转80下                                          | Rotate 80 times                                            | 2              |                   |
-| D        | quadcombo          | 1        | 连击消四（至少第三连消）                        | Clear a Quad\nwhile on a 2+-Combo                          | 4              |                   |
-| D        | szsingle           | 2        | S/Z块 2连消一                                   | Clear 2 Singles in a row\nusing S or Z-Pieces              | 4              |                   |
-| D        | combonohold        | 3        | 不暂存 3连击（四连消）                          | Perform a 3-Combo\nwithout using Hold                      | 3              |                   |
-| D        | noclearspin        | 3        | 3 x 不消除的旋                                  | Perform 3 Spins\nthat don't clear any lines                | 4              |                   |
-| D        | szljspin           | 2        | 2 x S/Z/J/L旋                                   | Perform 2\nS/Z/L/J-Spins                                   | 3              |                   |
-| C        | tspintriple        | 1        | T旋消三                                         | Clear a T-Spin Triple                                      | 2              |                   |
-| C        | nohold             | 25       | 不暂存 连放25块                                 | Place 25 pieces in a row\nwithout using Hold               | 4              | 【NH】            |
-| C        | triple             | 3        | 3 x 消三                                        | Clear 3 Triples                                            | 2              |                   |
-| C        | b2b                | 4        | B2B达到4                                        | Reach B2B x4                                               | 1              |                   |
-| C        | quadbuckets        | 2        | 2 x 不同列的消四                                | Clear a Quad in\n2 different columns                       | 3              |                   |
-| C        | holdconsecutive    | 12       | 一直暂存 连放12块                               | Use Hold on\n12 pieces in a row                            | 3              | 【NH】            |
-| C        | softdrop           | 10       | 一直按软降 连放10块                             | Place 10 pieces without\nreleasing Soft Drop               | 4              |                   |
-| C        | top3rows           | 3        | 最高堆到至少第18行 保持3秒                      | Have part of your stack in\nthe top 3 rows for 3 seconds   | 4              |                   |
-| C        | linesnoti          | 10       | 消10行 不用T和I（用T/I消除时重来）              | Clear 10 Lines without\nclearing with T or I-pieces        | 4              |                   |
-| C        | szspintriple       | 1        | S/Z旋消三                                       | Clear an S/Z-Spin Triple                                   | 2              |                   |
-| C        | odoubleconsecutive | 2        | 2连O块消二                                      | Clear 2 Doubles consecutively\nusing two O-Pieces          | 4              | 【NH】            |
-| C        | tspinminiclear     | 4        | 4 x T旋mini消                                   | Clear 4 T-Spin Minis                                       | 2              |                   |
-| C        | attack             | 14       | 送出14行攻击                                    | Send 14 Attack                                             | 1              |                   |
-| C        | doublespiece       | 3        | 3 x 消二 只用一种块（其他块消二时重来）         | Clear 3 Doubles\nwith the same type of piece               | 4              |                   |
-| C        | ljgarbage          | 1        | L/J旋挖垃圾行                                   | Clear Garbage\nusing a L/J-Spin                            | 3              |                   |
-| C        | szgarbage          | 1        | S/Z旋挖垃圾行                                   | Clear Garbage\nusing a S/Z-Spin                            | 3              |                   |
-| C        | columnopiece       | 3        | 在第一列放三个O块                               | Place 3 O-Pieces\nin column 1                              | 3              |                   |
-| C        | spinclear          | 2        | 一轮连击包含2次旋消                             | Clear 2 Spins\nin one combo                                | 3              |                   |
-| C        | iclearspam         | 1        | 不动I块消一                                     | Clear a Single with an I-Piece\nwithout moving or rotating | 4              |                   |
-| C        | holddas            | 6        | 保持充着DAS 连放6块（任一移动键状态变化时重来） | Place 6 Pieces\nwithout releasing DAS                      | 3              |                   |
-| B        | oclear             | 6        | 消6行 用O块                                     | Clear 6 Lines\nusing O-Pieces                              | 3              |                   |
-| B        | spinbuckets        | 3        | 三个不同块旋消                                  | Clear Spin-Clears\nwith 3 different pieces                 | 3              |                   |
-| B        | quad               | 4        | 4 x 消四                                        | Clear 4 Quads                                              | 1              |                   |
-| B        | spam               | 5        | 不转不移 连放5块                                | Place 5 pieces in a row\nwithout moving or rotating        | 4              |                   |
-| B        | ljspintriple       | 1        | L/J旋消三                                       | Clear an L/J-Spin Triple                                   | 2              |                   |
-| B        | quadconsecutive    | 2        | 2连消四                                         | Clear 2 Quads in a row                                     | 2              |                   |
-| B        | singlesonly        | 8        | 8 x 消一 无暂存 （消二三四/暂存时重来）         | Clear 8 Singles without doing\nother clears or using Hold  | 4              |                   |
-| B        | nogarbage          | 4        | 场内无垃圾 保持4秒                              | Have no Garbage Lines on\nyour board for 4 seconds         | 4              | 【r2P】           |
-| B        | rotate             | 300      | 转300下                                         | Rotate 300 times                                           | 2              |                   |
-| B        | nocancel           | 8        | 不抵消垃圾 保持8秒                              | Don't cancel any\ngarbage for 8 seconds                    | 3              |                   |
-| B        | tspindoubleup      | 1        | T旋消二，但朝上                                 | Clear a T-Spin Double\nwith the Piece pointing up          | 4              |                   |
-| B        | oclearspam         | 1        | 不动O块消二                                     | Clear a Double with an O-Piece\nwithout moving or rotating | 4              |                   |
-| B        | tnorotate          | 3        | 放三个不旋转的T （旋转T块时重来）               | Place 3 T-Pieces\nwithout rotating any                     | 3              |                   |
-| B        | tspincombo         | 1        | 连击T旋消二（至少第三连消）                     | Clear a T-Spin Double\nwhile on a 2+-Combo                 | 3              |                   |
-| A        | combo              | 7        | 7连击（8连消）                                  | Perform a 7-Combo                                          | 2              |                   |
-| A        | ispindouble        | 1        | I旋消二                                         | Clear an I-Spin Double                                     | 2              |                   |
-| A        | szspinconsecutive  | 2        | 2连S/Z旋消二                                    | Clear two S/Z-Spin\nDoubles consecutively                  | 3              |                   |
-| A        | ljspinconsecutive  | 2        | 2连L/J旋消二                                    | Clear two L/J-Spin\nDoubles consecutively                  | 3              |                   |
-| A        | colorclear         | 1        | 色彩消除                                        | Perform a Color Clear                                      | 2              |                   |
-| A        | lines              | 40       | 消40行                                          | Clear 40 Lines                                             | 1              |                   |
-| A        | combospin          | 4        | 一轮连击包含4次旋消                             | Clear 4 Spins\nin one Combo                                | 3              |                   |
-| A        | tspindtcolumn      | 1        | T旋消二/三，但旋转中心在边列                    | Clear a T-Spin Double/Triple\ncentered in column 1 or 10   | 3              |                   |
-| X(特殊)  | ospinconsecutive   | 2        | 2连O旋消二                                      | Clear two O-Spin Mini\nDoubles consecutively               | 3              |                   |
+| 难度标记 | 内部id             | 目标数值 | 内容                                            | 外显文本                                                   | 有特定Mod时不出现 |
+| -------- | ------------------ | -------- | ----------------------------------------------- | ---------------------------------------------------------- | ----------------- |
+| F        | combo              | 3        | 3连击（四连消）                                 | Perform a 3-Combo                                          |                   |
+| F        | double             | 2        | 2 x 消二                                        | Clear 2 Doubles                                            |                   |
+| F        | quad               | 1        | 消四                                            | Clear a Quad                                               |                   |
+| F        | lines              | 6        | 消6行                                           | Clear 6 Lines                                              |                   |
+| F        | osingle            | 1        | O块消一                                         | Clear a Single\nusing an O-Piece                           |                   |
+| F        | odouble            | 1        | O块消二                                         | Clear a Double\nusing an O-Piece                           |                   |
+| F        | szdouble           | 1        | S/Z消二                                         | Clear a Double\nusing an S or Z-Piece                      |                   |
+| F        | ljtriple           | 1        | L/J消三                                         | Clear a Triple\nusing an L or J-Piece                      |                   |
+| F        | iholdlines         | 3        | 暂存着I 消三行                                  | Clear 3 lines\nwhile holding an I-Piece                    | 【NH】            |
+| F        | hold               | 8        | 暂存8下                                         | Use Hold 8 times                                           | 【NH】            |
+| F        | rotate             | 20       | 转20下                                          | Rotate 20 times                                            |                   |
+| F        | singleconsecutive  | 2        | 2连消一                                         | Clear 2 Singles in a row                                   |                   |
+| E        | spin               | 1        | 任意spin                                        | Perform any Spin                                           |                   |
+| E        | tspinsingle        | 1        | T旋消一                                         | Clear a T-Spin Single                                      |                   |
+| E        | tspindouble        | 1        | T旋消二                                         | Clear a T-Spin Double                                      |                   |
+| E        | szspin             | 1        | S/Z旋消除                                       | Clear an S/Z-Spin                                          |                   |
+| E        | ljspin             | 1        | L/J旋消除                                       | Clear an L/J-Spin                                          |                   |
+| E        | combo              | 5        | 5连击（六连消）                                 | Perform a 5-Combo                                          |                   |
+| E        | iflat              | 2        | 2 x 横放I消一                                   | Clear 2 Lines using\nhorizontal I-Pieces                   |                   |
+| E        | pieces             | 20       | 放20块                                          | Place 20 pieces                                            |                   |
+| E        | attack             | 6        | 制造6行攻击（减半后，抵消也算）                 | Send 6 Attack                                              |                   |
+| E        | placeoconsecutive  | 2        | 连放两块O                                       | Place 2 O-Pieces\nin a row                                 | 【NH】            |
+| E        | norotateclockwise  | 12       | 只用逆时针转 连放12块（其他旋转时重来）         | Place 12 pieces while only\nrotating counterclockwise      |                   |
+| E        | singlenocombo      | 6        | 6 x 消一 不连击（二连消时重来）                 | Clear 6 Singles without\nstarting a combo                  |                   |
+| D        | double             | 4        | 4 x 消二                                        | Clear 4 Doubles                                            |                   |
+| D        | spam               | 3        | 不转不移 连放3块                                | Place 3 pieces in a row\nwithout moving or rotating        |                   |
+| D        | noclear            | 14       | 不消行 连放14块                                 | Place 14 pieces in a row\nwithout clearing any lines       |                   |
+| D        | szdouble           | 2        | 2 x S/Z消二                                     | Clear 2 Doubles\nusing S or Z-Pieces                       |                   |
+| D        | ljtriple           | 2        | 2 x L/J消三                                     | Clear 2 Triples\nusing L or J-Pieces                       |                   |
+| D        | ispinclear         | 1        | I旋消除                                         | Clear an I-Spin                                            |                   |
+| D        | upperhalfquad      | 1        | 在上半场消四（I块最低格至少第10行）             | Clear a Quad in the\nupper half of the board               |                   |
+| D        | rotate             | 80       | 转80下                                          | Rotate 80 times                                            |                   |
+| D        | quadcombo          | 1        | 连击消四（至少第三连消）                        | Clear a Quad\nwhile on a 2+-Combo                          |                   |
+| D        | szsingle           | 2        | S/Z块 2连消一                                   | Clear 2 Singles in a row\nusing S or Z-Pieces              |                   |
+| D        | combonohold        | 3        | 不暂存 3连击（四连消）                          | Perform a 3-Combo\nwithout using Hold                      |                   |
+| D        | noclearspin        | 3        | 3 x 不消除的旋                                  | Perform 3 Spins\nthat don't clear any lines                |                   |
+| D        | szljspin           | 2        | 2 x S/Z/J/L旋                                   | Perform 2\nS/Z/L/J-Spins                                   |                   |
+| C        | tspintriple        | 1        | T旋消三                                         | Clear a T-Spin Triple                                      |                   |
+| C        | nohold             | 25       | 不暂存 连放25块                                 | Place 25 pieces in a row\nwithout using Hold               | 【NH】            |
+| C        | triple             | 3        | 3 x 消三                                        | Clear 3 Triples                                            |                   |
+| C        | b2b                | 4        | B2B达到4                                        | Reach B2B x4                                               |                   |
+| C        | quadbuckets        | 2        | 2 x 不同列的消四                                | Clear a Quad in\n2 different columns                       |                   |
+| C        | holdconsecutive    | 12       | 一直暂存 连放12块                               | Use Hold on\n12 pieces in a row                            | 【NH】            |
+| C        | softdrop           | 10       | 一直按软降 连放10块                             | Place 10 pieces without\nreleasing Soft Drop               |                   |
+| C        | top3rows           | 3        | 最高堆到至少第18行 保持3秒                      | Have part of your stack in\nthe top 3 rows for 3 seconds   |                   |
+| C        | linesnoti          | 10       | 消10行 不用T和I（用T/I消除时重来）              | Clear 10 Lines without\nclearing with T or I-pieces        |                   |
+| C        | szspintriple       | 1        | S/Z旋消三                                       | Clear an S/Z-Spin Triple                                   |                   |
+| C        | odoubleconsecutive | 2        | 2连O块消二                                      | Clear 2 Doubles consecutively\nusing two O-Pieces          | 【NH】            |
+| C        | tspinminiclear     | 4        | 4 x T旋mini消                                   | Clear 4 T-Spin Minis                                       |                   |
+| C        | attack             | 14       | 产生14点攻击（减半后，抵消也算）                | Send 14 Attack                                             |                   |
+| C        | doublespiece       | 3        | 3 x 消二 只用一种块（其他块消二时重来）         | Clear 3 Doubles\nwith the same type of piece               |                   |
+| C        | ljgarbage          | 1        | L/J旋挖垃圾行                                   | Clear Garbage\nusing a L/J-Spin                            |                   |
+| C        | szgarbage          | 1        | S/Z旋挖垃圾行                                   | Clear Garbage\nusing a S/Z-Spin                            |                   |
+| C        | columnopiece       | 3        | 在第一列放三个O块                               | Place 3 O-Pieces\nin column 1                              |                   |
+| C        | spinclear          | 2        | 一轮连击包含2次旋消                             | Clear 2 Spins\nin one combo                                |                   |
+| C        | iclearspam         | 1        | 不动I块消一                                     | Clear a Single with an I-Piece\nwithout moving or rotating |                   |
+| C        | holddas            | 6        | 保持充着DAS 连放6块（任一移动键状态变化时重来） | Place 6 Pieces\nwithout releasing DAS                      |                   |
+| B        | oclear             | 6        | 消6行 用O块                                     | Clear 6 Lines\nusing O-Pieces                              |                   |
+| B        | spinbuckets        | 3        | 三个不同块旋消                                  | Clear Spin-Clears\nwith 3 different pieces                 |                   |
+| B        | quad               | 4        | 4 x 消四                                        | Clear 4 Quads                                              |                   |
+| B        | spam               | 5        | 不转不移 连放5块                                | Place 5 pieces in a row\nwithout moving or rotating        |                   |
+| B        | ljspintriple       | 1        | L/J旋消三                                       | Clear an L/J-Spin Triple                                   |                   |
+| B        | quadconsecutive    | 2        | 2连消四                                         | Clear 2 Quads in a row                                     |                   |
+| B        | singlesonly        | 8        | 8 x 消一 无暂存 （消二三四/暂存时重来）         | Clear 8 Singles without doing\nother clears or using Hold  |                   |
+| B        | nogarbage          | 4        | 场内无垃圾 保持4秒                              | Have no Garbage Lines on\nyour board for 4 seconds         | 【r2P】           |
+| B        | rotate             | 300      | 转300下                                         | Rotate 300 times                                           |                   |
+| B        | nocancel           | 8        | 不抵消垃圾 保持8秒                              | Don't cancel any\ngarbage for 8 seconds                    |                   |
+| B        | tspindoubleup      | 1        | T旋消二，但朝上                                 | Clear a T-Spin Double\nwith the Piece pointing up          |                   |
+| B        | oclearspam         | 1        | 不动O块消二                                     | Clear a Double with an O-Piece\nwithout moving or rotating |                   |
+| B        | tnorotate          | 3        | 放三个不旋转的T （旋转T块时重来）               | Place 3 T-Pieces\nwithout rotating any                     |                   |
+| B        | tspincombo         | 1        | 连击T旋消二（至少第三连消）                     | Clear a T-Spin Double\nwhile on a 2+-Combo                 |                   |
+| A        | combo              | 7        | 7连击（8连消）                                  | Perform a 7-Combo                                          |                   |
+| A        | ispindouble        | 1        | I旋消二                                         | Clear an I-Spin Double                                     |                   |
+| A        | szspinconsecutive  | 2        | 2连S/Z旋消二                                    | Clear two S/Z-Spin\nDoubles consecutively                  |                   |
+| A        | ljspinconsecutive  | 2        | 2连L/J旋消二                                    | Clear two L/J-Spin\nDoubles consecutively                  |                   |
+| A        | colorclear         | 1        | 色彩消除                                        | Perform a Color Clear                                      |                   |
+| A        | lines              | 40       | 消40行                                          | Clear 40 Lines                                             |                   |
+| A        | combospin          | 4        | 一轮连击包含4次旋消                             | Clear 4 Spins\nin one Combo                                |                   |
+| A        | tspindtcolumn      | 1        | T旋消二/三，但旋转中心在边列                    | Clear a T-Spin Double/Triple\ncentered in column 1 or 10   |                   |
+| X(特殊)  | ospinconsecutive   | 2        | 2连O旋消二                                      | Clear two O-Spin Mini\nDoubles consecutively               |                   |
 
 有一个`复活累积难度`变量，复活时增加（前5层+1，6至9层+2，10层+3）
 
@@ -727,15 +735,15 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关，在背�
 > `等级`和spm仅供大致参考，实际游玩中抵消不计入spm所以基本做不到，5/6层后基本必须靠三位数的蓄力攻击才能继续往上爬
 > 游玩时下落看起来有加速度，只是视觉效果，实际还是匀速的
 
-| 时间  | 负面效果                         | 文本                | 原始文本                                                        |
-| ----- | -------------------------------- | ------------------- | --------------------------------------------------------------- |
-| 6:00  | 垃圾行更混乱(禁用`受击保护`效果) | 你的权力开始流逝…   | YOUR POWER SLIPS… garbage received becomes messier              |
-| 7:00  | +25%受击倍率                     | 流言开始大肆传播…   | WHISPERS OF DISCONTENT SPREAD… receive 25% more garbage         |
-| 8:00  | +3行实心垃圾                     | 示威人群涌上街头…   | PROTESTERS LINE THE STREETS… +3 PERMANENT LINES                 |
-| 9:00  | +25%受击倍率                     | 昔日同盟背叛了你…   | YOUR CLOSEST ALLIES DEFECT… receive 25% more garbage            |
-| 10:00 | +5行实心垃圾(共8)                | 偏执遮蔽了你的理性… | PARANOIA CLOUDS YOUR JUDGEMENT… +5 PERMANENT LINES              |
-| 11:00 | 垃圾行彻底混乱(获得`全散`效果)   | 革命拉开了帷幕…     | THE REVOLUTION HAS BEGUN… garbage received becomes much messier |
-| 12:00 | +12行实心垃圾(共20)              | 时代的终结。        | THE END OF AN ERA. +12 PERMANENT LINES                          |
+| 时间  | 负面效果                                     | 文本                | 原始文本                                                        |
+| ----- | -------------------------------------------- | ------------------- | --------------------------------------------------------------- |
+| 6:00  | 垃圾行更混乱(禁用`受击保护`带来的混乱度减免) | 你的权力开始流逝…   | YOUR POWER SLIPS… garbage received becomes messier              |
+| 7:00  | +25%受击倍率                                 | 流言开始大肆传播…   | WHISPERS OF DISCONTENT SPREAD… receive 25% more garbage         |
+| 8:00  | +3行实心垃圾                                 | 示威人群涌上街头…   | PROTESTERS LINE THE STREETS… +3 PERMANENT LINES                 |
+| 9:00  | +25%受击倍率                                 | 昔日同盟背叛了你…   | YOUR CLOSEST ALLIES DEFECT… receive 25% more garbage            |
+| 10:00 | +5行实心垃圾(共8)                            | 偏执遮蔽了你的理性… | PARANOIA CLOUDS YOUR JUDGEMENT… +5 PERMANENT LINES              |
+| 11:00 | 垃圾行彻底混乱(获得`全散`效果)               | 革命拉开了帷幕…     | THE REVOLUTION HAS BEGUN… garbage received becomes much messier |
+| 12:00 | +12行实心垃圾(共20)                          | 时代的终结。        | THE END OF AN ERA. +12 PERMANENT LINES                          |
 
 ### rNH 逆位无暂存 （禁欲 Asceticism）
 
@@ -829,7 +837,7 @@ Mod总共有9个，每个都对应一个特殊效果可以独立开关，在背�
 - `垃圾混乱度`增加
 - 启用`垃圾行保护`
 - 重力不再随时间增长
-- 【认真的？】如果达到了800m且挖掘垃圾行数小于5，送出攻击将不再能获得经验
+- 【认真的？】如果达到了800m且挖掘垃圾行数小于5，通过 `AwardLines` 获得的经验会被关闭（发送、抵消、消行均受影响），但该函数中的高度奖励和越层判断仍执行
 
 ## 特殊Mod
 
@@ -952,7 +960,7 @@ _9 _7 _1 _0 16 24 __
 
 ## 一些备注
 
-所有疲劳机制中`+X%受击`会因为【(r)VL】对应地翻2(3)倍，相当于乘算
+所有疲劳机制中`+X%受击`在【(r)VL】结算之前，会对应地翻2(3)倍
 
 【rEX】和【r2P】下，攻击在最终发出前会被/2并向下取整（不影响经验等值的计算），应该是因为这两个模式“正常游玩”时输出过多，需要平衡强度
 
@@ -971,3 +979,5 @@ qp2模式其实就是一个巨大的房间，房间号是“x-qp”，输入房�
 感谢 ThTsOd 提供格式化代码的方案等帮助和部分片段解读
 
 感谢进行测试、指出问题、帮助修改的群友们
+
+感谢2026.11.22帮忙检查了一遍整个文档的GPT-6-Astra
