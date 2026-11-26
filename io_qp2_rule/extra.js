@@ -45,43 +45,52 @@ function GetSpeedCap(frame) {
 // 主循环
 function Loop() {
     const frame = this.self.esm.frame;
-    let rank = Math.floor(STAT.zenith.rank);
     const height0 = STAT.zenith.altitude; // 记下用于卡层的高度
 
-    // 经验流失
-    if (frame >= Z.rank_locked_until) {
-        let leakSpeed = _; // 单人:普通3专家5  双人:3+专家人数
-        Z.climb_pts -= leakSpeed * (rank ** 2 + rank) / 3600 // climb_pts是当前经验
+    // 经验计算部分 begin
+
+    let rank = Math.floor(STAT.zenith.rank);
+
+    // 自然流失
+    if (frame >= Z.rank_locked_until) { // 非流失保护期间
+        let leakSpeed = _; // 单人:普通3 【r2P】或【EX】时5  双人:3+【EX】人数
+        Z.climb_pts -= leakSpeed * (rank ** 2 + rank) / 3600;
     }
 
     const nextRankXP = 4 * rank;
-    const storedXP = 4 * (rank - 1);
-    if (Z.climb_pts < 0)
+    const storedXP   = 4 * (rank - 1);
+
+    // 降级 / 升级判定
+    if (Z.climb_pts < 0) {
         // 降级
         if (rank <= 1)
             // 不会掉到0级以下
             Z.climb_pts = 0;
         else {
-            // 恢复计算总xp
+            // 【回填】上一级的满经验量（注意不是直接设为满值）
             Z.climb_pts += storedXP;
             Z.last_rank_change_was_promote = false;
             rank--;
         }
-    else if (Z.climb_pts >= nextRankXP) {
-        // 清空xp升1级
+    } else if (Z.climb_pts >= nextRankXP) {
+        // 【扣除】当前等级条经验，升一级（注意不是清零，跳级需要利用这一点）
         Z.climb_pts -= nextRankXP;
         Z.last_rank_change_was_promote = true;
+        // 触发“流失保护”，第一次300帧后续每次少60f
         Z.rank_locked_until = frame + Math.max(60, 60 * (5 - Z.promotion_fatigue));
         Z.promotion_fatigue++;
         rank++;
     }
 
-    // xp在5秒内不自然流失效果
+    // 重置升级疲劳
     if (Z.last_rank_change_was_promote && Z.climb_pts >= 2 * (rank - 1))
         Z.promotion_fatigue = 0;
 
-    // 计算小数等级……或者跳级!！如果一帧内获得大量经验升级后还有足够已将下一级填满的话就会瞬间跳级
+    // 计算出带小数部分的连续等级值
+    // ……或者跳级！如果你在一帧内获得了大量经验 走到这一步后还有足够将下一级经验条填满的经验话就会在这个流程中跳级
     STAT.zenith.rank = rank + Z.climb_pts / (4 * rank);
+
+    // 经验计算部分 end
 
     // 一些统计
     STAT.zenith.peakrank = Math.max(STAT.zenith.rank, STAT.zenith.peakrank);
