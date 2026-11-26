@@ -60,6 +60,12 @@ function Loop() {
     const nextRankXP = 4 * rank;
     const storedXP   = 4 * (rank - 1);
 
+    // 限制最大等级
+    if (rank >= Z.maxrank) {
+        Z.climb_pts = Math.min(Z.climb_pts, nextRankXP - 0.05); // 暴力扣除所有超出当前等级经验条长度的所有经验
+        rank = Z.maxrank; // 【r2P】bug事件后新增
+    }
+
     // 降级 / 升级判定
     if (Z.climb_pts < 0) {
         // 降级
